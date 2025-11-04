@@ -1,83 +1,134 @@
 <!-- ===================================================== -->
 <!-- 🌌 TAWANA MOHAMMADI | توانا محمدی — OFFICIAL PORTFOLIO -->
-<!-- Premium Edition 2025 -->
+<!-- Premium Research Edition 2025 -->
 <!-- ===================================================== -->
 
 <!-- SEO & Knowledge Graph Optimization -->
 <!-- 
-Tawana Mohammadi, توانا محمدی, AI Researcher, Data Strategist, Educator,
-پژوهشگر هوش مصنوعی, Harvard University, OpenAIRE Researcher,
-AI Ethics, Prompt Engineering, Data Transparency, ORCID Scholar,
-Google Scholar, Medium Writer, Academic Portfolio, tawana.online
+Tawana Mohammadi, توانا محمدی, tawana mohammadi, tawanamohammadi, tavana mohammadi, tavanamohammadi,
+ Researcher, Data Strategist, Educator, پژوهشگر هوش مصنوعی, University of the People,
+Harvard University, ORCID 0009-0005-6825-6728, Web of Science ORI-6601-2025, Zenodo Researcher,
+AI Ethics, Prompt Engineering, Data Transparency, Responsible AI, Digital Rights, Cybersecurity,
+Internet Censorship Research, ChatGPT Systems, OpenAIRE Scholar, Google Scholar VP8O0a4AAAAJ,
+Computer Science, Artificial Intelligence, tawana.online, tawanamohammadi@gmail.com,
+Independent Researcher Tehran Iran, AI Literacy Education, Human-Centered AI Design
 -->
 
-<!-- HERO SECTION -->
 <div align="center">
 
-<!-- Profile Avatar with Gradient Border -->
-<img src="https://avatars.githubusercontent.com/u/141659359?v=4" 
+<!-- ===================================================== -->
+<!-- HERO SECTION WITH VERIFIED BADGE -->
+<!-- ===================================================== -->
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center">
+<img src="https://zenodo.org/api/communities/0866544c-c540-4b70-9ed3-ecab469fe7ea/logo" 
      alt="Tawana Mohammadi - AI Researcher" 
-     width="180px" 
-     style="border-radius: 50%; border: 4px solid #00bfff; box-shadow: 0 0 30px rgba(0,191,255,0.5);"/>
+     width="200px" 
+     style="border-radius: 50%; border: 5px solid #00bfff; box-shadow: 0 0 40px rgba(0,191,255,0.6);"/>
+</td>
+<td width="20px"></td>
+<td align="left" valign="center">
+<img src="https://img.shields.io/badge/✓-Verified_Researcher-00bfff?style=for-the-badge&labelColor=001a33&logo=checkmarx" height="35px"/>
+<br/>
+<img src="https://img.shields.io/badge/ORCID-0009--0005--6825--6728-70B865?style=for-the-badge&logo=orcid&logoColor=white" height="35px"/>
+<br/>
+<img src="https://img.shields.io/badge/Web_of_Science-ORI--6601--2025-5B2C6F?style=for-the-badge&logo=clarivate&logoColor=white" height="35px"/>
+</td>
+</tr>
+</table>
 
-# **Tawana Mohammadi** | **<span dir="rtl">توانا محمدی</span>**
+<h1>
+  <strong>Tawana Mohammadi</strong> | <strong><span dir="rtl">توانا محمدی</span></strong>
+</h1>
 
-### *AI Researcher • Data Strategist • Educator*
-### *<span dir="rtl">پژوهشگر هوش مصنوعی • استراتژیست داده • مدرس</span>*
+<h3>
+  <em>AI Researcher • Data Strategist • Educator</em><br/>
+  <em><span dir="rtl">پژوهشگر هوش مصنوعی • استراتژیست داده • مدرس</span></em>
+</h3>
 
-<!-- New Badges Section - Premium Display -->
-<p align="center">
+<!-- ===================================================== -->
+<!-- INSTITUTIONAL BADGES -->
+<!-- ===================================================== -->
+
+<p>
+  <img src="https://img.shields.io/badge/University_of_the_People-003B5C?style=for-the-badge&logo=graduation-cap&logoColor=white" alt="University of the People"/>
   <img src="https://img.shields.io/badge/Harvard_University-A51C30?style=for-the-badge&logo=harvard&logoColor=white" alt="Harvard University"/>
-  <img src="https://img.shields.io/badge/ORCID_Scholar-70B865?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID Scholar"/>
-  <img src="https://img.shields.io/badge/OpenAIRE-0077B5?style=for-the-badge&logo=open-access&logoColor=white" alt="OpenAIRE"/>
-  <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"/>
+  <img src="https://img.shields.io/badge/Independent_Researcher-00bfff?style=for-the-badge&logo=research-gate&logoColor=white" alt="Independent Researcher"/>
 </p>
 
-<!-- Status Badges -->
-<p align="center">
+<!-- ===================================================== -->
+<!-- ORIENTATION BADGE -->
+<!-- ===================================================== -->
+
+<details>
+<summary><b>🎓 View University of the People Orientation Badge</b></summary>
+<br/>
+<iframe src="https://badges.parchment.com/public/assertions/StmYbl4RRS6_7sjDQ1xxoA?identity__email=tawanamohammadi%40gmail.com&embedVersion=1&embedWidth=370&embedHeight=167&identity__email=tawanamohammadi%40gmail.com" title="Badge: Orientation Completed" style="width: 370px; height: 167px; border: 0px;"></iframe>
+</details>
+
+<!-- ===================================================== -->
+<!-- STATUS & ACHIEVEMENT BADGES -->
+<!-- ===================================================== -->
+
+<p>
   <img src="https://img.shields.io/badge/Status-Active_Researcher-00ff88?style=flat-square&labelColor=001a33"/>
   <img src="https://img.shields.io/badge/Focus-AI_Ethics-00bfff?style=flat-square&labelColor=001a33"/>
-  <img src="https://img.shields.io/badge/Location-Global-ff6b6b?style=flat-square&labelColor=001a33"/>
-  <img src="https://komarev.com/ghpvc/?username=TAwR00T&label=Profile+Views&color=00bfff&style=flat-square"/>
+  <img src="https://img.shields.io/badge/Location-Tehran,_Iran-ff6b6b?style=flat-square&labelColor=001a33"/>
+  <img src="https://komarev.com/ghpvc/?username=tawanamohammadi&label=Profile+Views&color=00bfff&style=flat-square"/>
+  <img src="https://img.shields.io/github/followers/tawanamohammadi?label=GitHub+Followers&style=flat-square&color=00bfff&labelColor=001a33&logo=github"/>
 </p>
 
-<!-- Animated Typing Effect -->
+<!-- ===================================================== -->
+<!-- ANIMATED TYPING EFFECT -->
+<!-- ===================================================== -->
+
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Making+AI+Transparent+%F0%9F%94%8D;Building+Ethical+Data+Systems+%E2%9A%96%EF%B8%8F;Empowering+Through+Education+%F0%9F%93%9A" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&multiline=true&repeat=true&width=650&height=120&lines=%F0%9F%94%8D+Making+AI+Transparent+%26+Ethical;%E2%9A%96%EF%B8%8F+Building+Human-Centered+Data+Systems;%F0%9F%93%9A+Empowering+Through+AI+Education;%F0%9F%8C%8D+Advancing+Digital+Rights+%26+Freedom" alt="Typing Animation"/>
 </a>
 
 ---
 
-<!-- Quick Navigation -->
+<!-- ===================================================== -->
+<!-- QUICK NAVIGATION -->
+<!-- ===================================================== -->
+
 <table>
 <tr>
-<td align="center" width="20%">
+<td align="center" width="16.66%">
 <a href="#about">
-<img src="https://img.icons8.com/fluency/96/about.png" width="50"/><br/>
+<img src="https://img.icons8.com/fluency/96/about.png" width="48"/><br/>
 <b>About</b>
 </a>
 </td>
-<td align="center" width="20%">
-<a href="#network">
-<img src="https://img.icons8.com/fluency/96/connection-sync.png" width="50"/><br/>
-<b>Network</b>
-</a>
-</td>
-<td align="center" width="20%">
+<td align="center" width="16.66%">
 <a href="#research">
-<img src="https://img.icons8.com/fluency/96/research.png" width="50"/><br/>
+<img src="https://img.icons8.com/fluency/96/research.png" width="48"/><br/>
 <b>Research</b>
 </a>
 </td>
-<td align="center" width="20%">
+<td align="center" width="16.66%">
+<a href="#publications">
+<img src="https://img.icons8.com/fluency/96/book.png" width="48"/><br/>
+<b>Publications</b>
+</a>
+</td>
+<td align="center" width="16.66%">
+<a href="#network">
+<img src="https://img.icons8.com/fluency/96/connection-sync.png" width="48"/><br/>
+<b>Network</b>
+</a>
+</td>
+<td align="center" width="16.66%">
 <a href="#skills">
-<img src="https://img.icons8.com/fluency/96/code.png" width="50"/><br/>
+<img src="https://img.icons8.com/fluency/96/code.png" width="48"/><br/>
 <b>Skills</b>
 </a>
 </td>
-<td align="center" width="20%">
+<td align="center" width="16.66%">
 <a href="#contact">
-<img src="https://img.icons8.com/fluency/96/email-open.png" width="50"/><br/>
+<img src="https://img.icons8.com/fluency/96/email-open.png" width="48"/><br/>
 <b>Contact</b>
 </a>
 </td>
@@ -88,194 +139,472 @@ Google Scholar, Medium Writer, Academic Portfolio, tawana.online
 
 ---
 
+<!-- ===================================================== -->
+<!-- ABOUT SECTION -->
+<!-- ===================================================== -->
+
 <h2 id="about">
-  <img src="https://img.icons8.com/fluency/48/brain.png" width="30"/> 
+  <img src="https://img.icons8.com/fluency/48/brain.png" width="32"/> 
   About Me | <span dir="rtl">درباره من</span>
 </h2>
 
 ```typescript
-const tawana: Researcher = {
-  name: "Tawana Mohammadi | توانا محمدی",
-  role: "AI Researcher & Data Strategist",
-  affiliation: ["Harvard University", "Tawana Network"],
-  mission: "Making AI transparent, ethical, and educational",
+const tawanaProfile: ResearcherProfile = {
+  name: {
+    en: "Tawana Mohammadi",
+    fa: "توانا محمدی",
+    aliases: ["tawanamohammadi", "tavana mohammadi", "tavanamohammadi"]
+  },
   
-  focus: [
-    "🔬 ChatGPT System Analysis",
-    "⚖️ AI Ethics & Governance", 
-    "📊 Data Transparency Frameworks",
-    "🎓 Prompt Engineering Education"
+  role: "AI Researcher & Data Strategist & Educator",
+  
+  affiliation: [
+    "University of the People (B.Sc. Computer Science, AI Track)",
+    "Harvard University (Research Collaborator)",
+    "Tawana Network (Founder - Ethical AI Research Hub)",
+    "Independent Researcher (Tehran, Iran)"
+  ],
+  
+  identifiers: {
+    orcid: "0009-0005-6825-6728",
+    webOfScience: "ORI-6601-2025",
+    googleScholar: "VP8O0a4AAAAJ"
+  },
+  
+  mission: `Designing human-centered, transparent, and responsible AI systems 
+            that empower individuals through ethical innovation and data literacy.
+            
+            طراحی سیستم‌های هوش مصنوعی انسان‌محور، شفاف و مسئولانه که افراد را 
+            از طریق نوآوری اخلاقی و سواد داده توانمند می‌کند.`,
+  
+  experience: "10+ years in AI systems, cybersecurity, and education",
+  
+  researchInterests: [
+    "🤖 AI Ethics & Governance",
+    "📊 Data Transparency & Strategy", 
+    "🧠 Prompt Engineering & AI Literacy",
+    "🔒 Cybersecurity & Digital Rights",
+    "🤝 Human-AI Collaboration",
+    "🌐 Internet Freedom & Censorship Research"
   ],
   
   languages: ["English", "فارسی (Persian)", "Python", "TypeScript"],
-  location: "🌍 Global • Remote",
-  website: "https://tawana.online"
+  location: "🇮🇷 Tehran, Iran (Remote/Global)",
+  website: "https://tawana.online",
+  email: "info@tawana.online",
+  phone: "+98 990 112 0235"
 };
 ```
 
-> ### 🎯 Vision | <span dir="rtl">چشم‌انداز</span>
+> ### 🎯 Research Vision | <span dir="rtl">چشم‌انداز پژوهشی</span>
+> 
 > **"AI should remain transparent, inclusive, and grounded in empathy."**  
 > **<span dir="rtl">«هوش مصنوعی باید شفاف، فراگیر و مبتنی بر همدلی باقی بماند.»</span>**
+>
+> *With over a decade of experience, I explore how algorithms and human values can coexist in transparent, ethical digital ecosystems. True progress in AI lies not in power, but in **empathy, accessibility, and accountability**.*
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=2&height=2&section=header"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=2&height=2"/>
 </div>
 
 ---
 
+<!-- ===================================================== -->
+<!-- RESEARCH INTERESTS & PROJECTS -->
+<!-- ===================================================== -->
+
+<h2 id="research">
+  <img src="https://img.icons8.com/fluency/48/research.png" width="32"/>
+  Research Interests & Projects | <span dir="rtl">پژوهش‌ها و پروژه‌ها</span>
+</h2>
+
+<div align="center">
+
+### 🔬 Current Research Areas | <span dir="rtl">حوزه‌های پژوهشی فعال</span>
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 🤖 **AI Ethics & Governance**
+<sub><span dir="rtl">هوش مصنوعی اخلاق‌محور و حاکمیت داده</span></sub>
+
+- Ethical frameworks for AI systems
+- Algorithmic accountability
+- Bias detection and mitigation
+- Responsible AI deployment
+
+</td>
+<td width="50%" valign="top">
+
+#### 📊 **Data Transparency & Strategy**
+<sub><span dir="rtl">شفافیت و راهبرد داده‌ها</span></sub>
+
+- Open data initiatives
+- Privacy-preserving analytics
+- Data governance architecture
+- Transparency reporting standards
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🧠 **Prompt Engineering & AI Literacy**
+<sub><span dir="rtl">مهندسی پرامپت و سواد هوش مصنوعی</span></sub>
+
+- Educational frameworks
+- ChatGPT system analysis
+- Human-AI interaction design
+- Public AI education
+
+</td>
+<td width="50%" valign="top">
+
+#### 🔒 **Cybersecurity & Digital Rights**
+<sub><span dir="rtl">امنیت سایبری و حقوق دیجیتال</span></sub>
+
+- Internet censorship research
+- Digital freedom advocacy
+- Information security
+- Privacy protection
+
+</td>
+</tr>
+</table>
+
+---
+
+### 🚀 Featured Projects | <span dir="rtl">پروژه‌های برجسته</span>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 💾 **ChatGPT Business Backup Guide**
+<img src="https://img.shields.io/badge/Status-Active-00ff88?style=flat-square"/>
+<img src="https://img.shields.io/badge/Category-Data_Governance-0066cc?style=flat-square"/>
+
+Comprehensive ethical framework for AI data preservation in enterprise environments with GDPR compliance.
+
+**<span dir="rtl">راهنمای جامع پشتیبان‌گیری اخلاقی از داده‌های هوش مصنوعی سازمانی</span>**
+
+**Key Features:**
+- 🔐 Enterprise backup protocols
+- ⚖️ Legal compliance frameworks
+- 📋 Risk assessment templates
+- 🛡️ Data security standards
+
+</td>
+<td width="50%" valign="top">
+
+#### 🧭 **PromptCraft Framework**
+<img src="https://img.shields.io/badge/Status-Active-00ff88?style=flat-square"/>
+<img src="https://img.shields.io/badge/Category-Education-ff6b00?style=flat-square"/>
+
+Educational toolkit for transparent and responsible prompt engineering with multilingual documentation.
+
+**<span dir="rtl">چارچوب آموزشی مهندسی پرامپت شفاف و مسئولانه</span>**
+
+**Key Features:**
+- 📚 Interactive learning modules
+- 🎯 Best practice guidelines
+- 🌐 English/Persian support
+- 🔧 Practical examples
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### ⚖️ **AI Transparency Docs**
+<img src="https://img.shields.io/badge/Status-Development-yellow?style=flat-square"/>
+<img src="https://img.shields.io/badge/Category-Ethics-9b59b6?style=flat-square"/>
+
+Comprehensive ethical audit and governance templates for transparent AI system implementation.
+
+**<span dir="rtl">اسناد جامع شفافیت و حاکمیت اخلاقی در سیستم‌های هوش مصنوعی</span>**
+
+**Key Features:**
+- ✅ Ethics audit checklists
+- 🔍 Bias detection frameworks
+- 📑 Governance templates
+- 📊 Impact assessment tools
+
+</td>
+<td width="50%" valign="top">
+
+#### 🌐 **PanbehNet AI Portal**
+<img src="https://img.shields.io/badge/Status-Experimental-00bfff?style=flat-square"/>
+<img src="https://img.shields.io/badge/Category-Public_Education-00cc66?style=flat-square"/>
+
+Open platform for data transparency and AI literacy education for public access.
+
+**<span dir="rtl">پرتال عمومی شفافیت داده و سواد هوش مصنوعی</span>**
+
+**Key Features:**
+- 📊 Open data visualization
+- 🎓 Interactive learning paths
+- 🔓 Free educational resources
+- 🌍 Community-driven content
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🐦 **X-Analyzer**
+<img src="https://img.shields.io/badge/Status-Released-success?style=flat-square"/>
+<img src="https://img.shields.io/badge/DOI-10.5281/zenodo.17513863-blue?style=flat-square"/>
+
+Open-source ethical Twitter/X data parser for transparency and AI research with responsible data handling.
+
+**Key Features:**
+- 🔧 CLI framework (curl + jq)
+- 📡 FXTwitter API integration
+- 📄 JSON structured output
+- ♻️ Open-source & ethical
+
+</td>
+<td width="50%" valign="top">
+
+#### 🔬 **Ethical AI Research Fund**
+<img src="https://img.shields.io/badge/Status-Ongoing-00ff88?style=flat-square"/>
+<img src="https://img.shields.io/badge/Type-Self_Funded-ff9900?style=flat-square"/>
+
+Independent research initiative for AI ethics and data transparency (2024-Present).
+
+**<span dir="rtl">صندوق پژوهش مستقل اخلاق هوش مصنوعی و شفافیت داده</span>**
+
+**Focus Areas:**
+- 🏛️ Self-funded research
+- 🌐 Open knowledge sharing
+- 🤝 Community collaboration
+- 📖 Public documentation
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=2&height=2"/>
+</div>
+
+---
+
+<!-- ===================================================== -->
+<!-- PUBLICATIONS & WORKS -->
+<!-- ===================================================== -->
+
+<h2 id="publications">
+  <img src="https://img.icons8.com/fluency/48/book.png" width="32"/>
+  Publications & Works | <span dir="rtl">انتشارات و آثار</span>
+</h2>
+
+<div align="center">
+
+### 📚 Featured Publications | <span dir="rtl">انتشارات برجسته</span>
+
+</div>
+
+#### 📄 **AI and Human Pain: From Pixels to Perception** (2025)
+<img src="https://img.shields.io/badge/DOI-10.5281/zenodo.17451336-blue?style=flat-square"/>
+<img src="https://img.shields.io/badge/Type-Journal_Article-success?style=flat-square"/>
+<img src="https://img.shields.io/badge/Platform-Zenodo-red?style=flat-square"/>
+
+> Human-AI collaboration case study using ChatGPT-5 for lumbar spine MRI interpretation, neural compression detection, and diagnostic dialogue. Demonstrates AI diagnostic capabilities in radiology and pain management.
+
+**Citation:**
+```
+Mohammadi, T. (2025). AI and Human Pain: From Pixels to Perception. 
+Zenodo. https://doi.org/10.5281/zenodo.17451336
+```
+
+---
+
+#### 📄 **Internet Censorship in Iran: Historical Roots, Mechanisms, and Societal Consequences** (2025)
+<img src="https://img.shields.io/badge/DOI-10.5281/zenodo.17411924-blue?style=flat-square"/>
+<img src="https://img.shields.io/badge/Type-Research_Report-success?style=flat-square"/>
+<img src="https://img.shields.io/badge/Platform-University_of_the_People_|_Zenodo-red?style=flat-square"/>
+
+> Comprehensive analysis of internet censorship in Iran (2005-2025) covering historical emergence, key actors, mechanisms (National Information Network, Iranian Firewall), and impacts on society, journalism, and digital rights. Available in English and Persian.
+
+**Citation:**
+```
+Mohammadi, T. (2025). Internet Censorship in Iran: Historical Roots, Mechanisms, 
+and Societal Consequences. University of the People / Zenodo (CERN). 
+https://doi.org/10.5281/zenodo.17411924
+```
+
+---
+
+#### 💻 **X-Analyzer: Ethical Twitter/X Data Parser** (2025)
+<img src="https://img.shields.io/badge/DOI-10.5281/zenodo.17513863-blue?style=flat-square"/>
+<img src="https://img.shields.io/badge/Type-Software-important?style=flat-square"/>
+<img src="https://img.shields.io/badge/Platform-GitHub_|_Zenodo-red?style=flat-square"/>
+
+> Open-source command-line framework for transparent and ethical analysis of public X/Twitter data. Demonstrates responsible data retrieval, documentation, and analysis principles.
+
+**Repository:** [github.com/TAwR00T/X-analyzer](https://github.com/TAwR00T/X-analyzer)
+
+---
+
+### ✍️ Writing & Articles | <span dir="rtl">نوشتار و مقالات</span>
+
+<div align="center">
+
+<a href="https://tawanamohammadi.medium.com/">
+<img src="https://img.shields.io/badge/Medium-AI_Ethics_&_Transparency-000000?style=for-the-badge&logo=medium&logoColor=white"/>
+</a>
+
+**Regular articles on:**
+- 🤖 AI Ethics & Governance
+- 📊 Data Transparency
+- 🔒 Digital Rights & Freedom
+- 🌐 Internet Censorship
+- 🧠 Prompt Engineering
+- 🎓 AI Education
+
+</div>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=2&height=2"/>
+</div>
+
+---
+
+<!-- ===================================================== -->
+<!-- ACADEMIC & PROFESSIONAL NETWORK -->
+<!-- ===================================================== -->
+
 <h2 id="network">
-  <img src="https://img.icons8.com/fluency/48/connection-sync.png" width="30"/>
+  <img src="https://img.icons8.com/fluency/48/connection-sync.png" width="32"/>
   Academic & Professional Network | <span dir="rtl">شبکه‌های علمی و حرفه‌ای</span>
 </h2>
 
 <div align="center">
 
-### 📚 Research Profiles | <span dir="rtl">پروفایل‌های پژوهشی</span>
+### 🎓 Research Profiles | <span dir="rtl">پروفایل‌های پژوهشی</span>
 
 <table>
 <tr>
-<td align="center" width="25%">
-<a href="https://scholar.google.com/citations?user=VP8O0a4AAAAJ&hl=en">
-<img src="https://img.icons8.com/fluency/96/google-scholar.png" width="60"/><br/>
-<b>Google Scholar</b><br/>
-<sub>Citation Index</sub>
-</a>
-</td>
-<td align="center" width="25%">
+<td align="center" width="20%">
 <a href="https://orcid.org/0009-0005-6825-6728">
-<img src="https://img.icons8.com/fluency/96/orcid.png" width="60"/><br/>
+<img src="https://img.icons8.com/fluency/96/orcid.png" width="64"/><br/>
 <b>ORCID</b><br/>
 <sub>0009-0005-6825-6728</sub>
 </a>
 </td>
-<td align="center" width="25%">
-<a href="https://orcid.org/0009-0009-8106-5917">
-<img src="https://img.icons8.com/fluency/96/orcid.png" width="60"/><br/>
-<b>ORCID (Alt)</b><br/>
-<sub>0009-0009-8106-5917</sub>
+<td align="center" width="20%">
+<a href="https://scholar.google.com/citations?user=VP8O0a4AAAAJ&hl=en">
+<img src="https://img.icons8.com/fluency/96/google-scholar.png" width="64"/><br/>
+<b>Google Scholar</b><br/>
+<sub>VP8O0a4AAAAJ</sub>
 </a>
 </td>
-<td align="center" width="25%">
+<td align="center" width="20%">
+<a href="https://www.webofscience.com/wos/author/record/ORI-6601-2025">
+<img src="https://img.icons8.com/fluency/96/web.png" width="64"/><br/>
+<b>Web of Science</b><br/>
+<sub>ORI-6601-2025</sub>
+</a>
+</td>
+<td align="center" width="20%">
 <a href="https://explore.openaire.eu/search/advanced/research-outcomes?f0=resultauthor&fv0=tawana%20mohammadi">
-<img src="https://img.icons8.com/fluency/96/open-book.png" width="60"/><br/>
+<img src="https://img.icons8.com/fluency/96/open-book.png" width="64"/><br/>
 <b>OpenAIRE</b><br/>
 <sub>Research Explorer</sub>
 </a>
 </td>
+<td align="center" width="20%">
+<a href="https://zenodo.org/communities/tawana-network">
+<img src="https://img.icons8.com/fluency/96/repository.png" width="64"/><br/>
+<b>Zenodo</b><br/>
+<sub>Research Works</sub>
+</a>
+</td>
 </tr>
 </table>
+
+---
+
+### 💻 Development & Code | <span dir="rtl">توسعه و کد</span>
+
+<p>
+<a href="https://github.com/tawanamohammadi"><img src="https://img.shields.io/badge/GitHub-tawanamohammadi-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://github.com/TAwR00T"><img src="https://img.shields.io/badge/GitHub_Alt-TAwR00T-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+</p>
+
+---
 
 ### ✍️ Writing & Community | <span dir="rtl">نوشتار و اجتماع</span>
 
 <p>
 <a href="https://tawanamohammadi.medium.com/"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white"/></a>
 <a href="https://www.reddit.com/user/tawanamohammadi"><img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white"/></a>
-<a href="https://tawana.online"><img src="https://img.shields.io/badge/Website-00BFFF?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
+<a href="https://tawanamohammadi.substack.com/"><img src="https://img.shields.io/badge/Substack-FF6719?style=for-the-badge&logo=substack&logoColor=white"/></a>
 </p>
-
-### 🏛️ Affiliations | <span dir="rtl">وابستگی‌ها</span>
-
-<p>
-<img src="https://img.shields.io/badge/Harvard_University-Researcher-A51C30?style=for-the-badge&logo=harvard&logoColor=white"/>
-<img src="https://img.shields.io/badge/Tawana_Network-Founder-00bfff?style=for-the-badge&logo=network-wired&logoColor=white"/>
-</p>
-
-</div>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=2&height=2&section=header"/>
-</div>
 
 ---
 
-<h2 id="research">
-  <img src="https://img.icons8.com/fluency/48/research.png" width="30"/>
-  Research & Projects | <span dir="rtl">پژوهش‌ها و پروژه‌ها</span>
-</h2>
-
-<div align="center">
+### 🏛️ Institutional Affiliations | <span dir="rtl">وابستگی‌های سازمانی</span>
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### 🤖 ChatGPT Business Backup Guide
-<img src="https://img.shields.io/badge/Status-Active-success?style=flat-square"/>
-<img src="https://img.shields.io/badge/Category-Data_Governance-blue?style=flat-square"/>
-
-Safe AI data preservation frameworks for enterprises with ethical compliance standards.
-
-**<span dir="rtl">راهنمای جامع پشتیبان‌گیری اخلاقی از داده‌های هوش مصنوعی سازمانی</span>**
-
-🔑 **Key Features:**
-- Enterprise data backup protocols
-- GDPR/ethical compliance
-- Risk assessment frameworks
-
+<td align="center" width="33%">
+<a href="https://www.uopeople.edu/">
+<img src="https://img.icons8.com/fluency/96/university.png" width="64"/><br/>
+<b>University of the People</b><br/>
+<sub>B.Sc. Computer Science (AI)</sub><br/>
+<sub>2025-Present</sub>
+</a>
 </td>
-<td width="50%" valign="top">
-
-### 🧭 PromptCraft Framework
-<img src="https://img.shields.io/badge/Status-Active-success?style=flat-square"/>
-<img src="https://img.shields.io/badge/Category-Education-orange?style=flat-square"/>
-
-Educational toolkit for transparent and responsible prompt engineering with multilingual support.
-
-**<span dir="rtl">چارچوب آموزشی مهندسی پرامپت شفاف و مسئولانه</span>**
-
-🎯 **Key Features:**
-- Interactive prompt templates
-- Best practice guidelines
-- Multilingual documentation
-
+<td align="center" width="33%">
+<a href="https://tawana.online">
+<img src="https://img.icons8.com/fluency/96/network.png" width="64"/><br/>
+<b>Tawana Network</b><br/>
+<sub>Ethical AI Research Hub</sub><br/>
+<sub>Founder & Director</sub>
+</a>
 </td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### ⚖️ AI Transparency Docs
-<img src="https://img.shields.io/badge/Status-Development-yellow?style=flat-square"/>
-<img src="https://img.shields.io/badge/Category-Ethics-purple?style=flat-square"/>
-
-Comprehensive ethical audit and governance templates for AI systems implementation.
-
-**<span dir="rtl">اسناد جامع شفافیت و حاکمیت اخلاقی در سیستم‌های هوش مصنوعی</span>**
-
-📋 **Key Features:**
-- Ethics audit checklists
-- Bias detection frameworks
-- Governance templates
-
-</td>
-<td width="50%" valign="top">
-
-### 🌐 PanbehNet AI Portal
-<img src="https://img.shields.io/badge/Status-Experimental-lightblue?style=flat-square"/>
-<img src="https://img.shields.io/badge/Category-Public_Education-green?style=flat-square"/>
-
-Public data transparency platform for AI literacy and education accessibility.
-
-**<span dir="rtl">پرتال عمومی شفافیت داده و سواد هوش مصنوعی</span>**
-
-🔍 **Key Features:**
-- Open data visualization
-- Interactive learning modules
-- Public AI education resources
-
+<td align="center" width="33%">
+<img src="https://img.icons8.com/fluency/96/researcher.png" width="64"/><br/>
+<b>Independent Researcher</b><br/>
+<sub>AI Ethics & Data Strategy</sub><br/>
+<sub>Tehran, Iran</sub>
 </td>
 </tr>
 </table>
 
+---
+
+### 📧 Verified Email Addresses | <span dir="rtl">ایمیل‌های تأیید شده</span>
+
+<p>
+<img src="https://img.shields.io/badge/✓-tawanamohammadi@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+<img src="https://img.shields.io/badge/✓-info@tawana.online-00bfff?style=for-the-badge&logo=mail.ru&logoColor=white"/>
+</p>
+
 </div>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=2&height=2&section=header"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=2&height=2"/>
 </div>
 
 ---
 
+<!-- ===================================================== -->
+<!-- SKILLS & TECHNOLOGY STACK -->
+<!-- ===================================================== -->
+
 <h2 id="skills">
-  <img src="https://img.icons8.com/fluency/48/code.png" width="30"/>
+  <img src="https://img.icons8.com/fluency/48/code.png" width="32"/>
   Skills & Technology Stack | <span dir="rtl">مهارت‌ها و پشته فناوری</span>
 </h2>
 
@@ -283,146 +612,70 @@ Public data transparency platform for AI literacy and education accessibility.
 
 ### 💻 Technical Skills | <span dir="rtl">مهارت‌های فنی</span>
 
-<img src="https://skillicons.dev/icons?i=python,fastapi,flask,nextjs,react,typescript,tailwind,git,github,docker,postgres,sqlite,redis,aws,vscode,notion,latex,markdown&perline=9" />
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,flask,nextjs,react,typescript,tailwind,git,github,docker,postgres,sqlite,redis,aws,gcp,linux,bash,vscode,notion,latex,markdown&perline=12" />
 
-### 🎨 Specializations | <span dir="rtl">تخصص‌ها</span>
+---
+
+### 🎯 Core Competencies | <span dir="rtl">شایستگی‌های اصلی</span>
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 🤖 **AI & Machine Learning**
+- ChatGPT System Analysis
+- Prompt Engineering & Design
+- LLM Integration & Fine-tuning
+- AI Ethics & Governance
+- Algorithmic Bias Detection
+- Human-AI Interaction Design
+
+#### 📊 **Data Strategy & Governance**
+- Data Transparency Frameworks
+- Privacy-Preserving Analytics
+- Governance Architecture Design
+- Compliance Standards (GDPR)
+- Open Data Initiatives
+- Risk Assessment Protocols
+
+</td>
+<td width="50%" valign="top">
+
+#### 🔒 **Cybersecurity & Digital Rights**
+- Internet Censorship Research
+- Digital Freedom Advocacy
+- Information Security Protocols
+- Privacy Protection Systems
+- Ethical Hacking Awareness
+- Network Security Analysis
+
+#### 🎓 **Education & Communication**
+- Technical Writing (English/Persian)
+- Curriculum Development
+- Research Publications
+- Community Building
+- Workshop Facilitation
+- Multilingual Documentation
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+---
+
+### 🛠️ Tools & Platforms | <span dir="rtl">ابزارها و پلتفرم‌ها</span>
 
 ```yaml
-AI & Machine Learning:
-  - ChatGPT System Analysis
-  - Prompt Engineering
-  - LLM Integration
-  - AI Ethics & Governance
+Programming & Development:
+  Languages: Python, TypeScript, JavaScript, Bash, SQL
+  Frameworks: PyTorch, TensorFlow, FastAPI, Flask, Next.js, React
+  Tools: Git, Docker, VS Code, Jupyter, Postman
 
-Data Strategy:
-  - Data Transparency Frameworks
-  - Privacy-Preserving Analytics
-  - Governance Architecture
-  - Compliance Standards
-
-Education & Communication:
-  - Technical Writing (EN/FA)
-  - Curriculum Development
-  - Research Publications
-  - Community Building
-```
-
-### 🏆 Core Competencies | <span dir="rtl">شایستگی‌های اصلی</span>
-
-<table>
-<tr>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/fluency/96/artificial-intelligence.png" width="60"/><br/>
-<b>AI Research</b><br/>
-<sub>Systems & Ethics</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/fluency/96/database.png" width="60"/><br/>
-<b>Data Strategy</b><br/>
-<sub>Governance & Privacy</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/fluency/96/teacher.png" width="60"/><br/>
-<b>Education</b><br/>
-<sub>AI Literacy</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/fluency/96/scales.png" width="60"/><br/>
-<b>Ethics</b><br/>
-<sub>Responsible AI</sub>
-</td>
-</tr>
-</table>
-
-</div>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=2&height=2&section=header"/>
-</div>
-
----
-
-<h2 id="analytics">
-  <img src="https://img.icons8.com/fluency/48/statistics.png" width="30"/>
-  GitHub Analytics | <span dir="rtl">آمار و تحلیل گیت‌هاب</span>
-</h2>
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=TAwR00T&show_icons=true&theme=tokyonight&hide_border=true&title_color=00bfff&icon_color=00bfff&bg_color=0d1117&text_color=c9d1d9&rank_icon=github" height="180px" alt="GitHub Stats"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=TAwR00T&theme=tokyonight&hide_border=true&background=0d1117&stroke=00bfff&ring=00bfff&fire=ff6b6b&currStreakLabel=00bfff" height="180px" alt="GitHub Streak"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TAwR00T&layout=compact&theme=tokyonight&hide_border=true&title_color=00bfff&bg_color=0d1117&text_color=c9d1d9" height="180px" alt="Top Languages"/>
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=TAwR00T&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00bfff&line=00bfff&point=ffffff" height="180px" alt="Activity Graph"/>
-
-### 🏅 Achievements | <span dir="rtl">دستاوردها</span>
-
-<img src="https://github-profile-trophy.vercel.app/?username=TAwR00T&theme=tokyonight&no-frame=true&no-bg=true&column=4&margin-w=15&margin-h=15" alt="GitHub Trophies"/>
-
-</div>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=2&height=2&section=header"/>
-</div>
-
----
-
-<h2 id="contact">
-  <img src="https://img.icons8.com/fluency/48/email-open.png" width="30"/>
-  Let's Connect | <span dir="rtl">بیایید در ارتباط باشیم</span>
-</h2>
-
-<div align="center">
-
-### 📬 Contact Information | <span dir="rtl">اطلاعات تماس</span>
-
-<table>
-<tr>
-<td align="center">
-<img src="https://img.icons8.com/fluency/96/domain.png" width="60"/><br/>
-<b>Website</b><br/>
-<a href="https://tawana.online">tawana.online</a>
-</td>
-<td align="center">
-<img src="https://img.icons8.com/fluency/96/email.png" width="60"/><br/>
-<b>Email</b><br/>
-<a href="mailto:info@tawana.online">info@tawana.online</a>
-</td>
-<td align="center">
-<img src="https://img.icons8.com/fluency/96/github.png" width="60"/><br/>
-<b>GitHub</b><br/>
-<a href="https://github.com/TAwR00T">@TAwR00T</a>
-</td>
-</tr>
-</table>
-
-### 🤝 Open to Collaborate On | <span dir="rtl">آماده همکاری در</span>
-
-<p>
-<img src="https://img.shields.io/badge/AI_Ethics_Research-00bfff?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Data_Governance-364fc7?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Educational_Content-00ff88?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Open_Source_Projects-ff6b6b?style=for-the-badge"/>
-</p>
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/TAwR00T/TAwR00T/main/A_logo_design_set_against_a_dark_background_showca.png" width="150" alt="Tawana Mohammadi Logo"/>
-
-### **Tawana Mohammadi** | **<span dir="rtl">توانا محمدی</span>**
-
-*AI Researcher • Data Strategist • Educator*  
-*<span dir="rtl">پژوهشگر هوش مصنوعی • استراتژیست داده • مدرس</span>*
-
----
-
-<sub>© 2025 Tawana Mohammadi. Building transparent, ethical, and educational AI systems.</sub>  
-<sub><span dir="rtl">© ۲۰۲۵ توانا محمدی. ساخت سیستم‌های هوش مصنوعی شفاف، اخلاقی و آموزشی.</span></sub>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:001a33,50:003c80,100:00bfff&height=120&section=footer&text=Thank%20You%20for%20Visiting&fontSize=24&fontColor=ffffff&animation=twinkling" width="100%"/>
-
-</div>
+AI & ML Platforms:
+  - OpenAI API (GPT-4, ChatGPT)
+  - LangChain & LangSmith
+  -
