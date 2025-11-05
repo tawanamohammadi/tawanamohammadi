@@ -1,193 +1,517 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Tawana Mohammadi | AI Ethics, Digital Governance & Tawana Network</title>
-
-  <meta name="description" content="Official website of Tawana Mohammadi — AI Ethics, Digital Governance & Data Transparency Researcher. Includes publications, research projects, and the Tawana Network hub for ethical AI." />
-  <meta name="keywords" content="Tawana Mohammadi, توانا محمدی, Tawana Network, AI Ethics, Digital Governance, OSINT, Iran, Research, Zenodo, ORCID, AI Transparency, AI Literacy, Prompt Engineering" />
-  <meta name="author" content="Tawana Mohammadi" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-
-  <link rel="canonical" href="https://tawana.online/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Tawana Mohammadi — AI Ethics & Digital Governance" />
-  <meta property="og:description" content="AI Researcher • Data Strategist • Educator. Founder of Tawana Network — Ethical AI & Data Transparency Research Hub." />
-  <meta property="og:url" content="https://tawana.online/" />
-  <meta property="og:image" content="https://avatars.githubusercontent.com/u/141659359?v=4" />
-  <meta property="og:locale" content="en_US" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Tawana Mohammadi — AI Ethics & Digital Governance" />
-  <meta name="twitter:description" content="Ethical AI, Data Transparency, and Research-driven Innovation." />
-  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/141659359?v=4" />
-
-  <!-- Fonts & Style -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Tawana Mohammadi | Independent AI Researcher</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="The professional portfolio of Tawana Mohammadi, an independent researcher focusing on AI ethics, data transparency, and digital governance. Full website launching soon.">
+  <meta name="keywords" content="Tawana Mohammadi, توانا محمدی, AI Ethics, Digital Governance, Data Transparency, Cybersecurity, Prompt Engineering, AI Researcher, Iran, Digital Rights">
+  <meta name="author" content="Tawana Mohammadi">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tawanamohammadi.github.io/">
+  
+  <!-- Open Graph & Twitter Cards -->
+  <meta property="og:title" content="Tawana Mohammadi | Independent AI Researcher">
+  <meta property="og:description" content="Exploring the intersection of ethics, intelligence, and data governance.">
+  <meta property="og:url" content="https://tawanamohammadi.github.io/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/141659359?v=4">
+  <meta property="og:type" content="profile">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Source+Serif+4:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons (using a simple emoji for demonstration, can be replaced with an icon library) -->
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tawana Mohammadi",
+    "alternateName": ["توانا محمدی"],
+    "url": "https://tawanamohammadi.github.io",
+    "image": "https://avatars.githubusercontent.com/u/141659359?v=4",
+    "jobTitle": "Independent AI Researcher, Data Strategist, and Educator",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Tawana Network"
+    },
+    "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of the People"
+    },
+    "sameAs": [
+      "https://orcid.org/0009-0005-6825-6728",
+      "https://scholar.google.com/citations?user=VP8O0a4AAAAJ",
+      "https://github.com/tawanamohammadi",
+      "https://tawanamohammadi.medium.com",
+      "https://zenodo.org/communities/tawana-network"
+    ],
+    "knowsAbout": ["AI Ethics", "Digital Governance", "Data Transparency", "Cybersecurity", "Prompt Engineering"]
+  }
+  </script>
 
   <style>
     :root {
-      --bg:#0f172a;
-      --card:#1e293b;
-      --ink:#e5e7eb;
-      --muted:#94a3b8;
-      --brand:#00bfa5;
-      --brand2:#00ffe0;
-      --radius:20px;
+      --bg-dark: #02040a;
+      --bg-medium: #0d1117;
+      --bg-light: #161b22;
+      --border-color: #30363d;
+      --text-primary: #c9d1d9;
+      --text-secondary: #8b949e;
+      --text-bright: #f0f6fc;
+      --accent-cyan: #39c5f7;
+      --accent-purple: #a29bfe;
+      --accent-green: #56d364;
+      --font-primary: 'Inter', sans-serif;
+      --font-secondary: 'Space Grotesk', sans-serif;
     }
-    *{box-sizing:border-box;}
-    body{
-      margin:0;
-      background:radial-gradient(circle at 40% -10%,#0d1528 0%,#0f172a 60%);
-      font-family:'Inter',sans-serif;
-      color:var(--ink);
-      overflow-x:hidden;
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: var(--font-primary);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
     }
-    header{
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      text-align:center;
-      padding:60px 20px 30px;
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-image: radial-gradient(circle at 1px 1px, var(--border-color) 1px, transparent 0);
+        background-size: 25px 25px;
+        opacity: 0.3;
+        z-index: -1;
     }
-    header img{
-      width:150px;
-      height:150px;
-      border-radius:50%;
-      border:3px solid rgba(255,255,255,.15);
-      box-shadow:0 0 20px rgba(0,255,224,.2);
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+    h1, h2, h3 { font-family: var(--font-secondary); color: var(--text-bright); font-weight: 600; }
+    h1 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; }
+    a { color: var(--accent-cyan); text-decoration: none; transition: color 0.3s ease; }
+    a:hover { color: var(--accent-purple); }
+
+    /* --- Scroll Animation --- */
+    .fade-in-section {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     }
-    h1{font-size:2.4rem;margin:16px 0 6px;color:#fff;}
-    h2{color:#dbeafe;margin-top:40px;}
-    .subtitle{color:var(--muted);}
-    .notice{
-      background:linear-gradient(90deg,rgba(0,255,224,.1),rgba(0,191,165,.12));
-      border:1px solid rgba(0,255,224,.2);
-      padding:10px 18px;
-      border-radius:12px;
-      margin:20px auto;
-      text-align:center;
-      width:fit-content;
-      font-weight:500;
+    .fade-in-section.is-visible {
+        opacity: 1;
+        transform: translateY(0);
     }
-    .links{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:12px;
-      margin:20px 0;
+    
+    /* --- Header / Hero --- */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 0;
+      position: relative;
     }
-    .btn{
-      padding:10px 14px;
-      border:1px solid rgba(255,255,255,.15);
-      border-radius:var(--radius);
-      background:var(--card);
-      color:var(--ink);
-      text-decoration:none;
-      transition:.3s;
+    .hero::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 50%;
+        transform: translateX(-50%);
+        width: 80%; height: 60%;
+        background: radial-gradient(ellipse at center, rgba(57, 197, 247, 0.1), transparent 70%);
+        z-index: -1;
     }
-    .btn:hover{color:var(--brand2);border-color:var(--brand2);}
-    section{
-      max-width:900px;
-      margin:0 auto;
-      padding:0 20px 60px;
+    .hero-content { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid var(--border-color);
+        padding: 5px;
+        background-color: var(--bg-dark);
     }
-    blockquote{
-      border-left:3px solid var(--brand);
-      padding-left:14px;
-      margin:20px 0;
-      color:#cbd5e1;
-      font-style:italic;
+    .hero h1 {
+        background: linear-gradient(90deg, var(--text-bright), var(--accent-cyan));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    footer{
-      text-align:center;
-      font-size:14px;
-      color:var(--muted);
-      padding:20px;
-      border-top:1px solid rgba(255,255,255,.1);
+    .hero-subtitle { font-family: var(--font-secondary); font-size: 1.25rem; color: var(--text-secondary); max-width: 600px; }
+    .launch-info {
+        background-color: var(--bg-light);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 600px;
     }
-    @media (max-width:600px){
-      h1{font-size:1.8rem;}
-      header img{width:120px;height:120px;}
+    .launch-info h3 { font-size: 1.1rem; color: var(--accent-cyan); letter-spacing: 1px; margin-bottom: 1rem; }
+    #countdown { display: flex; justify-content: center; gap: 1rem; font-family: var(--font-secondary); }
+    .time-block { text-align: center; }
+    .time-block span { display: block; }
+    .time-block .time-value { font-size: 2.5rem; color: var(--text-bright); line-height: 1; }
+    .time-block .time-label { font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; }
+    .social-links { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem; }
+    .social-links a { font-size: 1rem; font-weight: 500; }
+
+    /* --- General Section Styling --- */
+    section { padding: 6rem 0; }
+    
+    /* --- About Section --- */
+    .about-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
+    @media (min-width: 768px) { .about-grid { grid-template-columns: 2fr 1fr; } }
+    .bio p, .vision p { margin-bottom: 1.5rem; }
+    .vision {
+        background: var(--bg-medium);
+        border-left: 3px solid var(--accent-purple);
+        padding: 2rem;
+        border-radius: 8px;
+    }
+    .vision h3 { margin-bottom: 1rem; font-size: 1.5rem; }
+    blockquote {
+        font-style: italic;
+        color: var(--text-secondary);
+        border-left: 2px solid var(--border-color);
+        padding-left: 1rem;
+        margin: 1rem 0;
+    }
+
+    /* --- Professional Journey (Timeline) --- */
+    .timeline { position: relative; max-width: 800px; margin: 0 auto; }
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: var(--border-color);
+        top: 0; bottom: 0; left: 50%;
+        margin-left: -1px;
+    }
+    .timeline-item { padding: 10px 40px; position: relative; width: 50%; }
+    .timeline-item.left { left: 0; }
+    .timeline-item.right { left: 50%; }
+    .timeline-item::after {
+        content: '';
+        position: absolute;
+        width: 16px; height: 16px;
+        right: -8px; top: 22px;
+        background-color: var(--bg-dark);
+        border: 3px solid var(--accent-cyan);
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .timeline-item.right::after { left: -8px; }
+    .timeline-content {
+        padding: 20px 30px;
+        background-color: var(--bg-light);
+        border: 1px solid var(--border-color);
+        position: relative;
+        border-radius: 8px;
+    }
+    .timeline-content h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-bright); }
+    .timeline-content .tag {
+        display: inline-block;
+        background-color: var(--accent-green);
+        color: var(--bg-dark);
+        padding: 0.2rem 0.6rem;
+        font-size: 0.75rem;
+        border-radius: 12px;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    .timeline-content .meta { font-size: 0.9rem; color: var(--text-secondary); }
+    
+    /* --- Works & Projects --- */
+    .works-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+    .work-card {
+        background: var(--bg-light);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex; flex-direction: column;
+    }
+    .work-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        border-color: var(--accent-cyan);
+    }
+    .work-card .work-type {
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+    }
+    .work-card h3 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--text-bright); flex-grow: 1; }
+    .work-card .doi-link { font-weight: 600; font-family: var(--font-secondary); }
+
+    /* --- Expertise & Skills --- */
+    .expertise-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
+    @media (min-width: 992px) { .expertise-grid { grid-template-columns: 1fr 1fr; } }
+    .expertise-list h3, .tech-stack h3 { margin-bottom: 1.5rem; font-size: 1.5rem; }
+    .expertise-list ul { list-style: none; }
+    .expertise-list li {
+        background-color: var(--bg-light);
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 6px;
+        border-left: 3px solid var(--accent-purple);
+    }
+    .tech-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .tech-item {
+        background-color: var(--bg-medium);
+        color: var(--text-secondary);
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        border: 1px solid var(--border-color);
+    }
+
+    /* --- Footer --- */
+    footer {
+        padding: 4rem 0;
+        text-align: center;
+        border-top: 1px solid var(--border-color);
+        margin-top: 4rem;
+        background-color: var(--bg-medium);
+    }
+    .footer-content { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
+    .footer-links a { margin: 0 1rem; }
+    .footer-text { color: var(--text-secondary); font-size: 0.9rem; }
+
+    /* --- Responsive Adjustments --- */
+    @media (max-width: 768px) {
+        .timeline::after { left: 10px; }
+        .timeline-item { width: 100%; padding-left: 40px; padding-right: 0; }
+        .timeline-item.right { left: 0%; }
+        .timeline-item::after { left: 2px; }
+        .hero { min-height: auto; }
     }
   </style>
-
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Tawana Mohammadi",
-    "alternateName":["توانا محمدی","Tawana Network"],
-    "url":"https://tawana.online",
-    "image":"https://avatars.githubusercontent.com/u/141659359?v=4",
-    "jobTitle":"AI Ethics & Digital Governance Researcher",
-    "worksFor":{"@type":"Organization","name":"Tawana Network"},
-    "sameAs":[
-      "https://orcid.org/0009-0005-6825-6728",
-      "https://zenodo.org/communities/tawana-network",
-      "https://scholar.google.com/citations?user=VP8O0a4AAAAJ&hl=en",
-      "https://github.com/tawanamohammadi",
-      "https://tawanamohammadi.medium.com"
-    ]
-  }
-  </script>
 </head>
-
 <body>
-  <header>
-    <img src="https://avatars.githubusercontent.com/u/141659359?v=4" alt="Tawana Mohammadi portrait" />
-    <h1>Tawana Mohammadi | <span dir="rtl">توانا محمدی</span></h1>
-    <div class="subtitle">AI Researcher • Data Strategist • Educator</div>
-    <div class="notice">🚧 Website under active development — full research site launching soon</div>
 
-    <div class="links">
-      <a class="btn" href="mailto:info@tawana.online">✉️ Email</a>
-      <a class="btn" href="https://orcid.org/0009-0005-6825-6728" target="_blank">ORCID</a>
-      <a class="btn" href="https://zenodo.org/communities/tawana-network" target="_blank">Zenodo</a>
-      <a class="btn" href="https://scholar.google.com/citations?user=VP8O0a4AAAAJ&hl=en" target="_blank">Google Scholar</a>
-      <a class="btn" href="https://github.com/tawanamohammadi" target="_blank">GitHub</a>
-      <a class="btn" href="https://tawanamohammadi.medium.com" target="_blank">Medium</a>
-    </div>
-  </header>
+  <div class="container">
+    <header class="hero">
+      <div class="hero-content">
+        <img src="https://avatars.githubusercontent.com/u/141659359?v=4" alt="Tawana Mohammadi" class="profile-image">
+        <h1>Tawana Mohammadi</h1>
+        <p class="hero-subtitle">
+          Independent AI Researcher • Data Strategist • Educator
+          <br>
+          Working at the intersection of ethics, intelligence, and data governance.
+        </p>
 
-  <section>
-    <h2>About | <span dir="rtl">درباره من</span></h2>
-    <p>
-      I’m an independent researcher focused on <strong>AI Ethics</strong>, <strong>Digital Governance</strong>,
-      and <strong>Data Transparency</strong>. Founder of the <strong>Tawana Network</strong> — a hub for open, ethical,
-      and human-centered AI research.
-    </p>
-    <p dir="rtl">
-      پژوهشگر مستقل در زمینهٔ <strong>اخلاق هوش مصنوعی</strong>، <strong>حاکمیت دیجیتال</strong> و
-      <strong>شفافیت داده</strong>. بنیان‌گذار <strong>شبکهٔ توانا</strong> برای پژوهش و توسعهٔ اخلاقی در حوزهٔ هوش مصنوعی.
-    </p>
+        <div class="launch-info">
+          <h3>Full Research Portfolio Launching In</h3>
+          <div id="countdown">
+            <div class="time-block">
+              <span id="days" class="time-value">30</span>
+              <span class="time-label">Days</span>
+            </div>
+            <div class="time-block">
+              <span id="hours" class="time-value">00</span>
+              <span class="time-label">Hours</span>
+            </div>
+            <div class="time-block">
+              <span id="minutes" class="time-value">00</span>
+              <span class="time-label">Minutes</span>
+            </div>
+            <div class="time-block">
+              <span id="seconds" class="time-value">00</span>
+              <span class="time-label">Seconds</span>
+            </div>
+          </div>
+        </div>
 
-    <blockquote>
-      “True progress in AI lies not in power, but in empathy, accessibility, and accountability.”<br/>
-      <span dir="rtl">«پیشرفت واقعی در هوش مصنوعی در قدرت نیست، بلکه در همدلی، دسترسی‌پذیری و پاسخگویی است.»</span>
-    </blockquote>
+        <div class="social-links">
+          <a href="https://orcid.org/0009-0005-6825-6728" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://scholar.google.com/citations?user=VP8O0a4AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://github.com/tawanamohammadi" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://tawanamohammadi.medium.com" target="_blank" rel="noopener">Medium</a>
+          <a href="https://zenodo.org/communities/tawana-network" target="_blank" rel="noopener">Zenodo</a>
+        </div>
+      </div>
+    </header>
 
-    <h2>Research Focus</h2>
-    <ul>
-      <li>🤖 AI Ethics & Governance</li>
-      <li>📊 Data Transparency & Strategy</li>
-      <li>🧠 Prompt Engineering & AI Literacy</li>
-      <li>🔒 Cybersecurity & Digital Rights</li>
-      <li>🌐 Internet Freedom & Censorship Research</li>
-    </ul>
-  </section>
+    <main>
+      <section id="about" class="fade-in-section">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div class="bio">
+            <p>
+              I am Tawana Mohammadi (توانا محمدی), an independent AI researcher, educator, and data strategist. My mission is to design human-centered, transparent, and responsible AI systems that empower individuals and organizations through ethical innovation and data literacy.
+            </p>
+            <p>
+              With over a decade of experience in AI systems, cybersecurity, and education, I explore how algorithms and human values can coexist in transparent and ethical digital ecosystems. I believe that true progress in AI lies not in power, but in empathy, accessibility, and accountability.
+            </p>
+            <blockquote>"Where ethics and intelligence meet."</blockquote>
+          </div>
+          <div class="vision">
+            <h3>My Vision</h3>
+            <p>
+              AI should remain transparent, inclusive, and grounded in empathy. Through responsible design and education, I aim to make AI a bridge, not a barrier, between humans and technology—advancing a world where ethics, transparency, and human dignity define intelligence.
+            </p>
+          </div>
+        </div>
+      </section>
 
-  <footer>
-    © 2025 Tawana Mohammadi — Tawana Network | Ethical AI & Data Transparency Hub
-  </footer>
+      <section id="journey" class="fade-in-section">
+        <h2>Professional Journey</h2>
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <span class="tag">Employment</span>
+              <h3>AI Researcher • Data Strategist • Educator</h3>
+              <p class="meta">University of the People | 2025 - Present</p>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-content">
+                <span class="tag">Education</span>
+                <h3>Bachelor of Science (B.Sc.) in Computer Science</h3>
+                <p class="meta">University of the People | 2025 - Present</p>
+            </div>
+          </div>
+          <div class="timeline-item left">
+            <div class="timeline-content">
+                <span class="tag">Project</span>
+                <h3>Founder & Director</h3>
+                <p class="meta">Tawana Network – Ethical AI Research Hub | 2023 - Present</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="works" class="fade-in-section">
+        <h2>Featured Works & Projects</h2>
+        <div class="works-grid">
+          <div class="work-card">
+            <p class="work-type">Journal Article</p>
+            <h3>AI and Human Pain: From Pixels to Perception</h3>
+            <a href="https://doi.org/10.5281/ZENODO.17451336" target="_blank" rel="noopener" class="doi-link">DOI: 10.5281/ZENODO.17451336</a>
+          </div>
+          <div class="work-card">
+            <p class="work-type">Report</p>
+            <h3>Internet Censorship in Iran: Historical Roots, Mechanisms, and Societal Consequences</h3>
+            <a href="https://doi.org/10.5281/zenodo.17411924" target="_blank" rel="noopener" class="doi-link">DOI: 10.5281/zenodo.17411924</a>
+          </div>
+          <div class="work-card">
+            <p class="work-type">Software</p>
+            <h3>X-analyzer: Ethical Twitter/X Data Parser for Transparency and AI Research</h3>
+            <a href="https://doi.org/10.5281/zenodo.17513863" target="_blank" rel="noopener" class="doi-link">DOI: 10.5281/zenodo.17513863</a>
+          </div>
+          <div class="work-card">
+            <p class="work-type">Framework</p>
+            <h3>PromptCraft & AI Transparency Docs</h3>
+            <p class="meta">Educational toolkits for ethical audits and transparent prompt design.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="expertise" class="fade-in-section">
+        <h2>Core Expertise</h2>
+        <div class="expertise-grid">
+          <div class="expertise-list">
+            <h3>Research Interests</h3>
+            <ul>
+              <li>AI Ethics & Governance</li>
+              <li>Data Transparency & Strategy</li>
+              <li>Prompt Engineering & AI Literacy</li>
+              <li>Cybersecurity & Digital Rights</li>
+              <li>Human-AI Collaboration</li>
+            </ul>
+          </div>
+          <div class="tech-stack">
+            <h3>Skills & Tech Stack</h3>
+            <div class="tech-grid">
+              <span class="tech-item">Python</span>
+              <span class="tech-item">PyTorch</span>
+              <span class="tech-item">TensorFlow</span>
+              <span class="tech-item">LangChain</span>
+              <span class="tech-item">OpenAI API</span>
+              <span class="tech-item">Pandas</span>
+              <span class="tech-item">FastAPI</span>
+              <span class="tech-item">Git</span>
+              <span class="tech-item">Machine Learning</span>
+              <span class="tech-item">Data Strategy</span>
+              <span class="tech-item">Open Data</span>
+              <span class="tech-item">Ethics Frameworks</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="container footer-content">
+        <h2>Get In Touch</h2>
+        <p>
+          Connect with me through my primary channels while the full site is under development.
+        </p>
+        <div class="footer-links">
+          <a href="mailto:info@tawana.online">Email</a>
+          <a href="https://tawana.online" target="_blank" rel="noopener">Website</a>
+          <a href="https://github.com/tawanamohammadi" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="footer-text">
+          &copy; 2025 Tawana Mohammadi. All Rights Reserved. Last updated: October 2025.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // --- Countdown Timer ---
+    document.addEventListener('DOMContentLoaded', () => {
+      const futureDate = new Date();
+      futureDate.setDate(futureDate.getDate() + 30);
+      const launchDate = futureDate.getTime();
+
+      const countdownFunction = setInterval(function() {
+          const now = new Date().getTime();
+          const distance = launchDate - now;
+
+          if (distance < 0) {
+              clearInterval(countdownFunction);
+              document.getElementById("countdown").innerHTML = "<h3>The new site is live!</h3>";
+              return;
+          }
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("days").innerText = String(days).padStart(2, '0');
+          document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+          document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+          document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+      }, 1000);
+
+      // --- Scroll Animations ---
+      const sections = document.querySelectorAll('.fade-in-section');
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('is-visible');
+                  observer.unobserve(entry.target);
+              }
+          });
+      }, { threshold: 0.1 });
+      sections.forEach(section => observer.observe(section));
+    });
+  </script>
+
 </body>
 </html>
