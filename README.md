@@ -141,73 +141,73 @@ Independent Researcher Tehran Iran, AI Literacy Education, Human-Centered AI Des
 
 <!-- ===================================================== -->
 <!-- ABOUT SECTION -->
-<!-- ===================================================== -->
+<section id="about" style="margin-top:40px">
+  <h2>
+    <img src="https://img.icons8.com/fluency/48/brain.png" width="32" alt="brain icon" />
+    About Me | <span dir="rtl">درباره من</span>
+  </h2>
 
-<h2 id="about">
-  <img src="https://img.icons8.com/fluency/48/brain.png" width="32"/> 
-  About Me | <span dir="rtl">درباره من</span>
-</h2>
-
-```typescript
+  <pre style="background:#0f172a;color:#e5e7eb;padding:12px 16px;border-radius:12px;overflow-x:auto;font-family:'Fira Code',monospace;font-size:14px;">
 const tawanaProfile: ResearcherProfile = {
   name: {
     en: "Tawana Mohammadi",
     fa: "توانا محمدی",
     aliases: ["tawanamohammadi", "tavana mohammadi", "tavanamohammadi"]
   },
-  
+
   role: "AI Researcher & Data Strategist & Educator",
-  
+
   affiliation: [
     "University of the People (B.Sc. Computer Science, AI Track)",
     "Harvard University (Research Collaborator)",
     "Tawana Network (Founder - Ethical AI Research Hub)",
     "Independent Researcher (Tehran, Iran)"
   ],
-  
+
   identifiers: {
     orcid: "0009-0005-6825-6728",
     webOfScience: "ORI-6601-2025",
     googleScholar: "VP8O0a4AAAAJ"
   },
-  
-  mission: `Designing human-centered, transparent, and responsible AI systems 
+
+  mission: `Designing human-centered, transparent, and responsible AI systems
             that empower individuals through ethical innovation and data literacy.
-            
-            طراحی سیستم‌های هوش مصنوعی انسان‌محور، شفاف و مسئولانه که افراد را 
+
+            طراحی سیستم‌های هوش مصنوعی انسان‌محور، شفاف و مسئولانه که افراد را
             از طریق نوآوری اخلاقی و سواد داده توانمند می‌کند.`,
-  
+
   experience: "10+ years in AI systems, cybersecurity, and education",
-  
+
   researchInterests: [
     "🤖 AI Ethics & Governance",
-    "📊 Data Transparency & Strategy", 
+    "📊 Data Transparency & Strategy",
     "🧠 Prompt Engineering & AI Literacy",
     "🔒 Cybersecurity & Digital Rights",
     "🤝 Human-AI Collaboration",
     "🌐 Internet Freedom & Censorship Research"
   ],
-  
+
   languages: ["English", "فارسی (Persian)", "Python", "TypeScript"],
   location: "🇮🇷 Tehran, Iran (Remote/Global)",
   website: "https://tawana.online",
   email: "info@tawana.online",
   phone: "+98 990 112 0235"
 };
-```
+  </pre>
 
-> ### 🎯 Research Vision | <span dir="rtl">چشم‌انداز پژوهشی</span>
-> 
-> **"AI should remain transparent, inclusive, and grounded in empathy."**  
-> **<span dir="rtl">«هوش مصنوعی باید شفاف، فراگیر و مبتنی بر همدلی باقی بماند.»</span>**
->
-> *With over a decade of experience, I explore how algorithms and human values can coexist in transparent, ethical digital ecosystems. True progress in AI lies not in power, but in **empathy, accessibility, and accountability**.*
+  <h3>🎯 Research Vision | <span dir="rtl">چشم‌انداز پژوهشی</span></h3>
+  <blockquote style="border-left:3px solid #00bfa5;padding-left:12px;margin:10px 0;color:#d1d5db;font-style:italic;">
+    <strong>"AI should remain transparent, inclusive, and grounded in empathy."</strong><br/>
+    <strong dir="rtl">«هوش مصنوعی باید شفاف، فراگیر و مبتنی بر همدلی باقی بماند.»</strong><br/><br/>
+    With over a decade of experience, I explore how algorithms and human values can coexist in transparent, ethical digital ecosystems.
+    True progress in AI lies not in power, but in <strong>empathy, accessibility, and accountability</strong>.
+  </blockquote>
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=2&height=2"/>
-</div>
+  <div align="center" style="margin:30px 0">
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=2&height=2" alt="divider" />
+  </div>
+</section>
 
----
 
 <!-- ===================================================== -->
 <!-- RESEARCH INTERESTS & PROJECTS -->
