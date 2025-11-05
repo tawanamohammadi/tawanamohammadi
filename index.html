@@ -8,7 +8,7 @@
   <title>Tawana Mohammadi | Independent AI Researcher</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="The professional portfolio of Tawana Mohammadi, an independent researcher focusing on AI ethics, data transparency, and digital governance. Full website launching soon.">
+  <meta name="description" content="Professional portfolio of Tawana Mohammadi, an independent researcher focusing on AI ethics, data transparency, and digital governance. Full website launching soon.">
   <meta name="keywords" content="Tawana Mohammadi, توانا محمدی, AI Ethics, Digital Governance, Data Transparency, Cybersecurity, Prompt Engineering, AI Researcher, Iran, Digital Rights">
   <meta name="author" content="Tawana Mohammadi">
   <meta name="robots" content="index, follow">
@@ -27,32 +27,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Icons (using a simple emoji for demonstration, can be replaced with an icon library) -->
-
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Tawana Mohammadi",
-    "alternateName": ["توانا محمدی"],
     "url": "https://tawanamohammadi.github.io",
     "image": "https://avatars.githubusercontent.com/u/141659359?v=4",
     "jobTitle": "Independent AI Researcher, Data Strategist, and Educator",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Tawana Network"
-    },
-    "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "University of the People"
-    },
+    "worksFor": { "@type": "Organization", "name": "Tawana Network" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of the People" },
     "sameAs": [
       "https://orcid.org/0009-0005-6825-6728",
       "https://scholar.google.com/citations?user=VP8O0a4AAAAJ",
       "https://github.com/tawanamohammadi",
-      "https://tawanamohammadi.medium.com",
-      "https://zenodo.org/communities/tawana-network"
+      "https://tawanamohammadi.medium.com"
     ],
     "knowsAbout": ["AI Ethics", "Digital Governance", "Data Transparency", "Cybersecurity", "Prompt Engineering"]
   }
@@ -60,233 +50,200 @@
 
   <style>
     :root {
-      --bg-dark: #02040a;
-      --bg-medium: #0d1117;
-      --bg-light: #161b22;
-      --border-color: #30363d;
+      --bg-primary: #02040a;
+      --bg-secondary: #0d1117;
+      --bg-card: rgba(16, 22, 32, 0.5);
+      --border-color: rgba(48, 54, 61, 0.6);
       --text-primary: #c9d1d9;
       --text-secondary: #8b949e;
       --text-bright: #f0f6fc;
       --accent-cyan: #39c5f7;
       --accent-purple: #a29bfe;
-      --accent-green: #56d364;
+      --accent-magenta: #f778ba;
       --font-primary: 'Inter', sans-serif;
       --font-secondary: 'Space Grotesk', sans-serif;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
-      background-color: var(--bg-dark);
+      background-color: var(--bg-primary);
       color: var(--text-primary);
       font-family: var(--font-primary);
       line-height: 1.7;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
+      position: relative;
     }
+    
+    /* --- Aurora Background & Cursor Glow --- */
     body::before {
         content: '';
         position: fixed;
         top: 0; left: 0;
         width: 100%; height: 100%;
-        background-image: radial-gradient(circle at 1px 1px, var(--border-color) 1px, transparent 0);
-        background-size: 25px 25px;
-        opacity: 0.3;
+        background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
+        background-size: 30px 30px;
+        opacity: 0.5;
+        z-index: -2;
+    }
+    .aurora-background {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+    .aurora-background::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(ellipse 40% 50% at 20% 40%, rgba(57, 197, 247, 0.2), transparent),
+                          radial-gradient(ellipse 40% 50% at 80% 60%, rgba(162, 155, 254, 0.2), transparent);
+        animation: aurora-glow 15s linear infinite alternate;
+    }
+    @keyframes aurora-glow {
+        from { transform: rotate(0deg) scale(1.2); opacity: 0.6; }
+        to { transform: rotate(360deg) scale(1.5); opacity: 1; }
+    }
+    #cursor-glow {
+        position: fixed;
+        width: 500px; height: 500px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(57, 197, 247, 0.15) 0%, transparent 60%);
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: top 0.1s ease-out, left 0.1s ease-out;
         z-index: -1;
     }
+    
     .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
     h1, h2, h3 { font-family: var(--font-secondary); color: var(--text-bright); font-weight: 600; }
     h1 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; }
-    h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 3rem; text-align: center; }
     a { color: var(--accent-cyan); text-decoration: none; transition: color 0.3s ease; }
-    a:hover { color: var(--accent-purple); }
+    a:hover { color: var(--accent-magenta); }
 
     /* --- Scroll Animation --- */
-    .fade-in-section {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .fade-in-section.is-visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    .fade-in-section { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in-section.is-visible { opacity: 1; transform: translateY(0); }
     
-    /* --- Header / Hero --- */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 4rem 0;
-      position: relative;
-    }
-    .hero::after {
-        content: '';
-        position: absolute;
-        top: 0; left: 50%;
-        transform: translateX(-50%);
-        width: 80%; height: 60%;
-        background: radial-gradient(ellipse at center, rgba(57, 197, 247, 0.1), transparent 70%);
-        z-index: -1;
-    }
+    /* --- Hero Section --- */
+    .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 4rem 0; }
     .hero-content { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
-    .profile-image {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 3px solid var(--border-color);
-        padding: 5px;
-        background-color: var(--bg-dark);
-    }
-    .hero h1 {
-        background: linear-gradient(90deg, var(--text-bright), var(--accent-cyan));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+    .profile-image { width: 150px; height: 150px; border-radius: 50%; border: 3px solid var(--border-color); }
+    .hero h1 { background: linear-gradient(90deg, var(--text-bright), var(--accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .hero-subtitle { font-family: var(--font-secondary); font-size: 1.25rem; color: var(--text-secondary); max-width: 600px; }
     .launch-info {
-        background-color: var(--bg-light);
+        background: var(--bg-card);
         border: 1px solid var(--border-color);
         border-radius: 12px;
         padding: 1.5rem;
         margin-top: 1rem;
         width: 100%;
         max-width: 600px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
     .launch-info h3 { font-size: 1.1rem; color: var(--accent-cyan); letter-spacing: 1px; margin-bottom: 1rem; }
     #countdown { display: flex; justify-content: center; gap: 1rem; font-family: var(--font-secondary); }
     .time-block { text-align: center; }
-    .time-block span { display: block; }
     .time-block .time-value { font-size: 2.5rem; color: var(--text-bright); line-height: 1; }
     .time-block .time-label { font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; }
-    .social-links { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem; }
-    .social-links a { font-size: 1rem; font-weight: 500; }
+    .social-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 2rem; }
+    .social-links a { font-size: 1rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; }
+    .social-links svg { width: 1.2em; height: 1.2em; }
 
     /* --- General Section Styling --- */
     section { padding: 6rem 0; }
     
     /* --- About Section --- */
-    .about-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
-    @media (min-width: 768px) { .about-grid { grid-template-columns: 2fr 1fr; } }
-    .bio p, .vision p { margin-bottom: 1.5rem; }
+    .about-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+    @media (min-width: 992px) { .about-grid { grid-template-columns: 2fr 1fr; } }
+    .bio p { margin-bottom: 1.5rem; }
     .vision {
-        background: var(--bg-medium);
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
         border-left: 3px solid var(--accent-purple);
         padding: 2rem;
         border-radius: 8px;
+        backdrop-filter: blur(10px);
     }
     .vision h3 { margin-bottom: 1rem; font-size: 1.5rem; }
-    blockquote {
-        font-style: italic;
-        color: var(--text-secondary);
-        border-left: 2px solid var(--border-color);
-        padding-left: 1rem;
-        margin: 1rem 0;
-    }
+    blockquote { font-style: italic; color: var(--text-secondary); border-left: 2px solid var(--border-color); padding-left: 1rem; margin: 1rem 0; }
 
     /* --- Professional Journey (Timeline) --- */
     .timeline { position: relative; max-width: 800px; margin: 0 auto; }
-    .timeline::after {
-        content: '';
-        position: absolute;
-        width: 2px;
-        background-color: var(--border-color);
-        top: 0; bottom: 0; left: 50%;
-        margin-left: -1px;
-    }
+    .timeline::after { content: ''; position: absolute; width: 2px; background-color: var(--border-color); top: 0; bottom: 0; left: 50%; margin-left: -1px; }
     .timeline-item { padding: 10px 40px; position: relative; width: 50%; }
     .timeline-item.left { left: 0; }
     .timeline-item.right { left: 50%; }
-    .timeline-item::after {
-        content: '';
-        position: absolute;
-        width: 16px; height: 16px;
-        right: -8px; top: 22px;
-        background-color: var(--bg-dark);
-        border: 3px solid var(--accent-cyan);
-        border-radius: 50%;
-        z-index: 1;
-    }
+    .timeline-item::after { content: ''; position: absolute; width: 16px; height: 16px; right: -8px; top: 22px; background-color: var(--bg-secondary); border: 3px solid var(--accent-cyan); border-radius: 50%; z-index: 1; }
     .timeline-item.right::after { left: -8px; }
     .timeline-content {
         padding: 20px 30px;
-        background-color: var(--bg-light);
+        background: var(--bg-card);
         border: 1px solid var(--border-color);
         position: relative;
         border-radius: 8px;
+        backdrop-filter: blur(10px);
     }
-    .timeline-content h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-bright); }
-    .timeline-content .tag {
-        display: inline-block;
-        background-color: var(--accent-green);
-        color: var(--bg-dark);
-        padding: 0.2rem 0.6rem;
-        font-size: 0.75rem;
-        border-radius: 12px;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-    }
+    .timeline-content h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .timeline-content .tag { display: inline-block; background-color: var(--accent-purple); color: var(--bg-primary); padding: 0.2rem 0.6rem; font-size: 0.75rem; border-radius: 12px; font-weight: 600; margin-bottom: 0.5rem; }
     .timeline-content .meta { font-size: 0.9rem; color: var(--text-secondary); }
     
-    /* --- Works & Projects --- */
+    /* --- Publications & Writing --- */
+    .section-divider { margin: 4rem auto; width: 50%; height: 1px; background: var(--border-color); }
     .works-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
     .work-card {
-        background: var(--bg-light);
+        background: var(--bg-card);
         border: 1px solid var(--border-color);
         border-radius: 8px;
         padding: 1.5rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transition: transform 0.3s ease, border-color 0.3s ease;
         display: flex; flex-direction: column;
+        position: relative; overflow: hidden;
+        backdrop-filter: blur(10px);
     }
-    .work-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        border-color: var(--accent-cyan);
+    .work-card:hover { transform: translateY(-5px); border-color: var(--accent-cyan); }
+    .work-card::before {
+        content: ""; position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(57, 197, 247, 0.2), transparent 40%);
+        opacity: 0; transition: opacity 0.5s;
     }
-    .work-card .work-type {
-        font-size: 0.8rem;
-        color: var(--text-secondary);
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 0.5rem;
-    }
-    .work-card h3 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--text-bright); flex-grow: 1; }
+    .work-card:hover::before { opacity: 1; }
+    .work-card .work-type { font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; }
+    .work-card h3 { font-size: 1.2rem; margin-bottom: 1rem; flex-grow: 1; }
     .work-card .doi-link { font-weight: 600; font-family: var(--font-secondary); }
+    
+    .article-list { display: flex; flex-direction: column; gap: 1rem; max-width: 800px; margin: 0 auto; }
+    .article-item {
+        display: flex; justify-content: space-between; align-items: center;
+        background: var(--bg-card);
+        padding: 1rem 1.5rem;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        transition: background-color 0.3s, border-color 0.3s;
+        backdrop-filter: blur(10px);
+    }
+    .article-item:hover { background-color: var(--bg-secondary); border-color: var(--accent-purple); }
+    .article-item .platform { font-size: 0.8rem; color: var(--text-secondary); }
+    .article-item svg { transition: transform 0.3s ease; }
+    .article-item:hover svg { transform: translateX(5px); }
 
     /* --- Expertise & Skills --- */
     .expertise-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
     @media (min-width: 992px) { .expertise-grid { grid-template-columns: 1fr 1fr; } }
     .expertise-list h3, .tech-stack h3 { margin-bottom: 1.5rem; font-size: 1.5rem; }
     .expertise-list ul { list-style: none; }
-    .expertise-list li {
-        background-color: var(--bg-light);
-        padding: 1rem;
-        margin-bottom: 1rem;
-        border-radius: 6px;
-        border-left: 3px solid var(--accent-purple);
-    }
+    .expertise-list li { background-color: rgba(16, 22, 32, 0.7); padding: 1rem; margin-bottom: 1rem; border-radius: 6px; border-left: 3px solid var(--accent-purple); }
     .tech-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; }
-    .tech-item {
-        background-color: var(--bg-medium);
-        color: var(--text-secondary);
-        padding: 0.5rem 1rem;
-        border-radius: 6px;
-        font-size: 0.9rem;
-        border: 1px solid var(--border-color);
-    }
+    .tech-item { background-color: var(--bg-secondary); color: var(--text-secondary); padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.9rem; border: 1px solid var(--border-color); }
 
     /* --- Footer --- */
-    footer {
-        padding: 4rem 0;
-        text-align: center;
-        border-top: 1px solid var(--border-color);
-        margin-top: 4rem;
-        background-color: var(--bg-medium);
-    }
+    footer { padding: 4rem 0 2rem; text-align: center; border-top: 1px solid var(--border-color); margin-top: 4rem; background-color: var(--bg-secondary); }
     .footer-content { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
-    .footer-links a { margin: 0 1rem; }
     .footer-text { color: var(--text-secondary); font-size: 0.9rem; }
 
     /* --- Responsive Adjustments --- */
@@ -295,11 +252,24 @@
         .timeline-item { width: 100%; padding-left: 40px; padding-right: 0; }
         .timeline-item.right { left: 0%; }
         .timeline-item::after { left: 2px; }
-        .hero { min-height: auto; }
+        .hero { min-height: 100vh; justify-content: center; }
+        h2 { margin-bottom: 2rem; }
     }
   </style>
 </head>
 <body>
+
+  <div class="aurora-background"></div>
+  <div id="cursor-glow"></div>
+
+  <!-- SVG Icons Definition -->
+  <svg width="0" height="0" style="display:none;">
+    <symbol id="icon-orcid" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.553 0 .999.447.999.999s-.446.999-.999.999a.999.999 0 1 1 0-1.998zm0 3.996h-2v11.248h2V8.374zM12 19.622c-2.384 0-3.92-1.565-3.92-3.92 0-2.354 1.536-3.92 3.92-3.92s3.92 1.566 3.92 3.92c0 2.355-1.536 3.92-3.92 3.92z"/></symbol>
+    <symbol id="icon-scholar" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24l-12-6v-6.914l12 6.094 12-6.094v6.914zM12 0L0 6l12 6 10.156-5.078L12 0z"/></symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></symbol>
+    <symbol id="icon-medium" viewBox="0 0 24 24" fill="currentColor"><path d="M7.002 6c0-1.103.897-2 2-2h5.996c1.103 0 2 .897 2 2v12l-6-4-6 4V6zm2 0v9.143l4-2.667l4 2.667V6h-8z"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></symbol>
+  </svg>
 
   <div class="container">
     <header class="hero">
@@ -307,61 +277,39 @@
         <img src="https://avatars.githubusercontent.com/u/141659359?v=4" alt="Tawana Mohammadi" class="profile-image">
         <h1>Tawana Mohammadi</h1>
         <p class="hero-subtitle">
-          Independent AI Researcher • Data Strategist • Educator
-          <br>
-          Working at the intersection of ethics, intelligence, and data governance.
+          Independent AI Researcher • Data Strategist • Educator<br>
+          "Where ethics and intelligence meet."
         </p>
 
         <div class="launch-info">
           <h3>Full Research Portfolio Launching In</h3>
           <div id="countdown">
-            <div class="time-block">
-              <span id="days" class="time-value">30</span>
-              <span class="time-label">Days</span>
-            </div>
-            <div class="time-block">
-              <span id="hours" class="time-value">00</span>
-              <span class="time-label">Hours</span>
-            </div>
-            <div class="time-block">
-              <span id="minutes" class="time-value">00</span>
-              <span class="time-label">Minutes</span>
-            </div>
-            <div class="time-block">
-              <span id="seconds" class="time-value">00</span>
-              <span class="time-label">Seconds</span>
-            </div>
+            <div class="time-block"><span id="days" class="time-value">30</span><span class="time-label">Days</span></div>
+            <div class="time-block"><span id="hours" class="time-value">00</span><span class="time-label">Hours</span></div>
+            <div class="time-block"><span id="minutes" class="time-value">00</span><span class="time-label">Minutes</span></div>
+            <div class="time-block"><span id="seconds" class="time-value">00</span><span class="time-label">Seconds</span></div>
           </div>
         </div>
 
         <div class="social-links">
-          <a href="https://orcid.org/0009-0005-6825-6728" target="_blank" rel="noopener">ORCID</a>
-          <a href="https://scholar.google.com/citations?user=VP8O0a4AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-          <a href="https://github.com/tawanamohammadi" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://tawanamohammadi.medium.com" target="_blank" rel="noopener">Medium</a>
-          <a href="https://zenodo.org/communities/tawana-network" target="_blank" rel="noopener">Zenodo</a>
+          <a href="https://orcid.org/0009-0005-6825-6728" target="_blank" rel="noopener"><svg><use href="#icon-orcid" /></svg>ORCID</a>
+          <a href="https://scholar.google.com/citations?user=VP8O0a4AAAAJ" target="_blank" rel="noopener"><svg><use href="#icon-scholar" /></svg>Google Scholar</a>
+          <a href="https://github.com/tawanamohammadi" target="_blank" rel="noopener"><svg><use href="#icon-github" /></svg>GitHub</a>
+          <a href="https://tawanamohammadi.medium.com" target="_blank" rel="noopener"><svg><use href="#icon-medium" /></svg>Medium</a>
         </div>
       </div>
     </header>
 
     <main>
       <section id="about" class="fade-in-section">
-        <h2>About Me</h2>
         <div class="about-grid">
           <div class="bio">
-            <p>
-              I am Tawana Mohammadi (توانا محمدی), an independent AI researcher, educator, and data strategist. My mission is to design human-centered, transparent, and responsible AI systems that empower individuals and organizations through ethical innovation and data literacy.
-            </p>
-            <p>
-              With over a decade of experience in AI systems, cybersecurity, and education, I explore how algorithms and human values can coexist in transparent and ethical digital ecosystems. I believe that true progress in AI lies not in power, but in empathy, accessibility, and accountability.
-            </p>
-            <blockquote>"Where ethics and intelligence meet."</blockquote>
+            <p>I am an independent AI researcher, educator, and data strategist. My mission is to design human-centered, transparent, and responsible AI systems that empower individuals through ethical innovation and data literacy.</p>
+            <p>With experience in AI systems and cybersecurity, I explore how algorithms and human values can coexist in ethical digital ecosystems. I believe true progress in AI lies not in power, but in empathy, accessibility, and accountability.</p>
           </div>
           <div class="vision">
             <h3>My Vision</h3>
-            <p>
-              AI should remain transparent, inclusive, and grounded in empathy. Through responsible design and education, I aim to make AI a bridge, not a barrier, between humans and technology—advancing a world where ethics, transparency, and human dignity define intelligence.
-            </p>
+            <p>AI should remain transparent, inclusive, and grounded in empathy. Through responsible design, I aim to make AI a bridge, not a barrier, between humans and technology.</p>
           </div>
         </div>
       </section>
@@ -369,53 +317,30 @@
       <section id="journey" class="fade-in-section">
         <h2>Professional Journey</h2>
         <div class="timeline">
-          <div class="timeline-item left">
-            <div class="timeline-content">
-              <span class="tag">Employment</span>
-              <h3>AI Researcher • Data Strategist • Educator</h3>
-              <p class="meta">University of the People | 2025 - Present</p>
-            </div>
-          </div>
-          <div class="timeline-item right">
-            <div class="timeline-content">
-                <span class="tag">Education</span>
-                <h3>Bachelor of Science (B.Sc.) in Computer Science</h3>
-                <p class="meta">University of the People | 2025 - Present</p>
-            </div>
-          </div>
-          <div class="timeline-item left">
-            <div class="timeline-content">
-                <span class="tag">Project</span>
-                <h3>Founder & Director</h3>
-                <p class="meta">Tawana Network – Ethical AI Research Hub | 2023 - Present</p>
-            </div>
-          </div>
+          <div class="timeline-item left"><div class="timeline-content"><span class="tag">Employment</span><h3>AI Researcher & Data Strategist</h3><p class="meta">University of the People | 2025 - Present</p></div></div>
+          <div class="timeline-item right"><div class="timeline-content"><span class="tag">Education</span><h3>B.Sc. in Computer Science</h3><p class="meta">University of the People | 2025 - Present</p></div></div>
+          <div class="timeline-item left"><div class="timeline-content"><span class="tag">Project</span><h3>Founder & Director</h3><p class="meta">Tawana Network – Ethical AI Hub | 2023 - Present</p></div></div>
         </div>
       </section>
 
-      <section id="works" class="fade-in-section">
-        <h2>Featured Works & Projects</h2>
+      <section id="publications" class="fade-in-section">
+        <h2>Publications & Writing</h2>
+        <h3 style="text-align:center; font-weight:500; margin-bottom: 2rem; color: var(--text-secondary);">Featured Research</h3>
         <div class="works-grid">
-          <div class="work-card">
-            <p class="work-type">Journal Article</p>
-            <h3>AI and Human Pain: From Pixels to Perception</h3>
-            <a href="https://doi.org/10.5281/ZENODO.17451336" target="_blank" rel="noopener" class="doi-link">DOI: 10.5281/ZENODO.17451336</a>
-          </div>
-          <div class="work-card">
-            <p class="work-type">Report</p>
-            <h3>Internet Censorship in Iran: Historical Roots, Mechanisms, and Societal Consequences</h3>
-            <a href="https://doi.org/10.5281/zenodo.17411924" target="_blank" rel="noopener" class="doi-link">DOI: 10.5281/zenodo.17411924</a>
-          </div>
-          <div class="work-card">
-            <p class="work-type">Software</p>
-            <h3>X-analyzer: Ethical Twitter/X Data Parser for Transparency and AI Research</h3>
-            <a href="https://doi.org/10.5281/zenodo.17513863" target="_blank" rel="noopener" class="doi-link">DOI: 10.5281/zenodo.17513863</a>
-          </div>
-          <div class="work-card">
-            <p class="work-type">Framework</p>
-            <h3>PromptCraft & AI Transparency Docs</h3>
-            <p class="meta">Educational toolkits for ethical audits and transparent prompt design.</p>
-          </div>
+          <div class="work-card"><p class="work-type">Journal Article</p><h3>AI and Human Pain: From Pixels to Perception</h3><a href="https://doi.org/10.5281/ZENODO.17451336" target="_blank" rel="noopener" class="doi-link">View Publication</a></div>
+          <div class="work-card"><p class="work-type">Report</p><h3>Internet Censorship in Iran: Historical Roots & Consequences</h3><a href="https://doi.org/10.5281/zenodo.17411924" target="_blank" rel="noopener" class="doi-link">View Publication</a></div>
+          <div class="work-card"><p class="work-type">Software</p><h3>X-analyzer: Ethical Twitter/X Data Parser</h3><a href="https://doi.org/10.5281/zenodo.17513863" target="_blank" rel="noopener" class="doi-link">View on Zenodo</a></div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <h3 style="text-align:center; font-weight:500; margin-bottom: 2rem; color: var(--text-secondary);">Articles & Insights on Medium</h3>
+        <div class="article-list">
+            <a href="https://tawanamohammadi.medium.com" target="_blank" rel="noopener" class="article-item">
+                <span>Explore all articles on <span style="color:var(--text-bright); font-weight: 500;">Medium</span></span>
+                <svg width="20" height="20"><use href="#icon-arrow" /></svg>
+            </a>
+            <!-- Add more specific article links here if you want -->
         </div>
       </section>
 
@@ -435,18 +360,7 @@
           <div class="tech-stack">
             <h3>Skills & Tech Stack</h3>
             <div class="tech-grid">
-              <span class="tech-item">Python</span>
-              <span class="tech-item">PyTorch</span>
-              <span class="tech-item">TensorFlow</span>
-              <span class="tech-item">LangChain</span>
-              <span class="tech-item">OpenAI API</span>
-              <span class="tech-item">Pandas</span>
-              <span class="tech-item">FastAPI</span>
-              <span class="tech-item">Git</span>
-              <span class="tech-item">Machine Learning</span>
-              <span class="tech-item">Data Strategy</span>
-              <span class="tech-item">Open Data</span>
-              <span class="tech-item">Ethics Frameworks</span>
+              <span class="tech-item">Python</span><span class="tech-item">PyTorch</span><span class="tech-item">TensorFlow</span><span class="tech-item">LangChain</span><span class="tech-item">OpenAI API</span><span class="tech-item">Pandas</span><span class="tech-item">FastAPI</span><span class="tech-item">Git</span><span class="tech-item">Machine Learning</span><span class="tech-item">Data Strategy</span><span class="tech-item">Open Data</span>
             </div>
           </div>
         </div>
@@ -456,47 +370,35 @@
     <footer id="contact">
       <div class="container footer-content">
         <h2>Get In Touch</h2>
-        <p>
-          Connect with me through my primary channels while the full site is under development.
-        </p>
-        <div class="footer-links">
+        <p>Connect with me while the full site is under development.</p>
+        <div class="social-links">
           <a href="mailto:info@tawana.online">Email</a>
           <a href="https://tawana.online" target="_blank" rel="noopener">Website</a>
-          <a href="https://github.com/tawanamohammadi" target="_blank" rel="noopener">GitHub</a>
         </div>
-        <p class="footer-text">
-          &copy; 2025 Tawana Mohammadi. All Rights Reserved. Last updated: October 2025.
-        </p>
+        <p class="footer-text">&copy; 2025 Tawana Mohammadi. All Rights Reserved.</p>
       </div>
     </footer>
   </div>
 
   <script>
-    // --- Countdown Timer ---
     document.addEventListener('DOMContentLoaded', () => {
-      const futureDate = new Date();
-      futureDate.setDate(futureDate.getDate() + 30);
-      const launchDate = futureDate.getTime();
+      // --- Countdown Timer (30 Days) ---
+      const launchDate = new Date();
+      launchDate.setDate(launchDate.getDate() + 30);
+      const launchTime = launchDate.getTime();
 
-      const countdownFunction = setInterval(function() {
+      const countdownInterval = setInterval(() => {
           const now = new Date().getTime();
-          const distance = launchDate - now;
-
+          const distance = launchTime - now;
           if (distance < 0) {
-              clearInterval(countdownFunction);
+              clearInterval(countdownInterval);
               document.getElementById("countdown").innerHTML = "<h3>The new site is live!</h3>";
               return;
           }
-
-          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          document.getElementById("days").innerText = String(days).padStart(2, '0');
-          document.getElementById("hours").innerText = String(hours).padStart(2, '0');
-          document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
-          document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+          document.getElementById("days").innerText = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+          document.getElementById("hours").innerText = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+          document.getElementById("minutes").innerText = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+          document.getElementById("seconds").innerText = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
       }, 1000);
 
       // --- Scroll Animations ---
@@ -510,6 +412,25 @@
           });
       }, { threshold: 0.1 });
       sections.forEach(section => observer.observe(section));
+
+      // --- Cursor Glow Effect ---
+      const cursorGlow = document.getElementById('cursor-glow');
+      window.addEventListener('mousemove', e => {
+          cursorGlow.style.left = e.clientX + 'px';
+          cursorGlow.style.top = e.clientY + 'px';
+      });
+      
+      // --- Interactive Card Glow Effect ---
+      const cards = document.querySelectorAll('.work-card');
+      cards.forEach(card => {
+          card.addEventListener('mousemove', e => {
+              const rect = card.getBoundingClientRect();
+              const x = e.clientX - rect.left;
+              const y = e.clientY - rect.top;
+              card.style.setProperty('--mouse-x', `${x}px`);
+              card.style.setProperty('--mouse-y', `${y}px`);
+          });
+      });
     });
   </script>
 
