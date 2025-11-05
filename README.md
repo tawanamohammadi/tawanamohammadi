@@ -23,7 +23,7 @@ Independent Researcher Tehran Iran, AI Literacy Education, Human-Centered AI Des
 <table border="0" cellpadding="0" cellspacing="0">
 <tr>
 <td align="center">
-<img src="https://zenodo.org/api/communities/0866544c-c540-4b70-9ed3-ecab469fe7ea/logo" 
+<img src="https://avatars.githubusercontent.com/u/141659359?v=4" 
      alt="Tawana Mohammadi - AI Researcher" 
      width="200px" 
      style="border-radius: 50%; border: 5px solid #00bfff; box-shadow: 0 0 40px rgba(0,191,255,0.6);"/>
