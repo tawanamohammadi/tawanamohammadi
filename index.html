@@ -1,100 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tawana Mohammadi | AI Ethics & Digital Governance</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="description" content="Tawana Mohammadi – Independent AI Researcher | AI Ethics, Data Transparency, and Digital Governance in Iran and Beyond.">
-  <meta name="keywords" content="Tawana Mohammadi, توانا محمدی, AI Ethics, Digital Governance, Iran, Telegram, Research, OSINT, Zenodo, ORCID, Tawana Network">
-  <meta name="author" content="Tawana Mohammadi">
+  <title>Tawana Mohammadi | AI Ethics, Digital Governance & Tawana Network</title>
 
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Official website of Tawana Mohammadi — AI Ethics, Digital Governance & Data Transparency Researcher. Includes publications, research projects, and the Tawana Network hub for ethical AI." />
+  <meta name="keywords" content="Tawana Mohammadi, توانا محمدی, Tawana Network, AI Ethics, Digital Governance, OSINT, Iran, Research, Zenodo, ORCID, AI Transparency, AI Literacy, Prompt Engineering" />
+  <meta name="author" content="Tawana Mohammadi" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <link rel="canonical" href="https://tawana.online/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tawana Mohammadi — AI Ethics & Digital Governance" />
+  <meta property="og:description" content="AI Researcher • Data Strategist • Educator. Founder of Tawana Network — Ethical AI & Data Transparency Research Hub." />
+  <meta property="og:url" content="https://tawana.online/" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/141659359?v=4" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tawana Mohammadi — AI Ethics & Digital Governance" />
+  <meta name="twitter:description" content="Ethical AI, Data Transparency, and Research-driven Innovation." />
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/141659359?v=4" />
+
+  <!-- Fonts & Style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Source+Serif+4:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle at top left, #0F172A, #1E293B);
-      color: #E2E8F0;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
+    :root {
+      --bg:#0f172a;
+      --card:#1e293b;
+      --ink:#e5e7eb;
+      --muted:#94a3b8;
+      --brand:#00bfa5;
+      --brand2:#00ffe0;
+      --radius:20px;
     }
-
-    h1 {
-      font-size: 2.4rem;
-      color: #00BFA5;
-      margin-bottom: 0.2em;
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      background:radial-gradient(circle at 40% -10%,#0d1528 0%,#0f172a 60%);
+      font-family:'Inter',sans-serif;
+      color:var(--ink);
+      overflow-x:hidden;
     }
-
-    h2 {
-      font-weight: 400;
-      color: #94A3B8;
-      margin-bottom: 1em;
+    header{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      padding:60px 20px 30px;
     }
-
-    a {
-      color: #00BFA5;
-      text-decoration: none;
-      transition: color 0.3s;
+    header img{
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      border:3px solid rgba(255,255,255,.15);
+      box-shadow:0 0 20px rgba(0,255,224,.2);
     }
-    a:hover { color: #00FFE0; }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      margin-top: 1.2rem;
+    h1{font-size:2.4rem;margin:16px 0 6px;color:#fff;}
+    h2{color:#dbeafe;margin-top:40px;}
+    .subtitle{color:var(--muted);}
+    .notice{
+      background:linear-gradient(90deg,rgba(0,255,224,.1),rgba(0,191,165,.12));
+      border:1px solid rgba(0,255,224,.2);
+      padding:10px 18px;
+      border-radius:12px;
+      margin:20px auto;
+      text-align:center;
+      width:fit-content;
+      font-weight:500;
     }
-
-    .link-box {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 0.8rem 1.4rem;
-      border-radius: 12px;
-      backdrop-filter: blur(6px);
-      transition: background 0.3s, transform 0.3s;
+    .links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:12px;
+      margin:20px 0;
     }
-
-    .link-box:hover {
-      background: rgba(0, 191, 165, 0.15);
-      transform: translateY(-3px);
+    .btn{
+      padding:10px 14px;
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:var(--radius);
+      background:var(--card);
+      color:var(--ink);
+      text-decoration:none;
+      transition:.3s;
     }
-
-    footer {
-      position: absolute;
-      bottom: 12px;
-      font-size: 0.85rem;
-      color: #64748B;
+    .btn:hover{color:var(--brand2);border-color:var(--brand2);}
+    section{
+      max-width:900px;
+      margin:0 auto;
+      padding:0 20px 60px;
+    }
+    blockquote{
+      border-left:3px solid var(--brand);
+      padding-left:14px;
+      margin:20px 0;
+      color:#cbd5e1;
+      font-style:italic;
+    }
+    footer{
+      text-align:center;
+      font-size:14px;
+      color:var(--muted);
+      padding:20px;
+      border-top:1px solid rgba(255,255,255,.1);
+    }
+    @media (max-width:600px){
+      h1{font-size:1.8rem;}
+      header img{width:120px;height:120px;}
     }
   </style>
-</head>
-<body>
-  <main>
-    <h1>Tawana Mohammadi</h1>
-    <h2>AI Ethics & Digital Governance Researcher</h2>
 
-    <p>“Where ethics meets intelligence.”</p>
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Tawana Mohammadi",
+    "alternateName":["توانا محمدی","Tawana Network"],
+    "url":"https://tawana.online",
+    "image":"https://avatars.githubusercontent.com/u/141659359?v=4",
+    "jobTitle":"AI Ethics & Digital Governance Researcher",
+    "worksFor":{"@type":"Organization","name":"Tawana Network"},
+    "sameAs":[
+      "https://orcid.org/0009-0005-6825-6728",
+      "https://zenodo.org/communities/tawana-network",
+      "https://scholar.google.com/citations?user=VP8O0a4AAAAJ&hl=en",
+      "https://github.com/tawanamohammadi",
+      "https://tawanamohammadi.medium.com"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/141659359?v=4" alt="Tawana Mohammadi portrait" />
+    <h1>Tawana Mohammadi | <span dir="rtl">توانا محمدی</span></h1>
+    <div class="subtitle">AI Researcher • Data Strategist • Educator</div>
+    <div class="notice">🚧 Website under active development — full research site launching soon</div>
 
     <div class="links">
-      <div class="link-box"><a href="https://tawana.online" target="_blank">🌐 Website</a></div>
-      <div class="link-box"><a href="https://orcid.org/0009-0005-6825-6728" target="_blank">ORCID</a></div>
-      <div class="link-box"><a href="https://zenodo.org/communities/tawana-network" target="_blank">Zenodo</a></div>
-      <div class="link-box"><a href="https://scholar.google.com/citations?user=VP8O0a4AAAAJ&hl=en" target="_blank">Google Scholar</a></div>
-      <div class="link-box"><a href="https://tawanamohammadi.medium.com" target="_blank">Medium</a></div>
-      <div class="link-box"><a href="https://github.com/tawanamohammadi" target="_blank">GitHub</a></div>
-      <div class="link-box"><a href="mailto:info@tawana.online">✉️ Email</a></div>
+      <a class="btn" href="mailto:info@tawana.online">✉️ Email</a>
+      <a class="btn" href="https://orcid.org/0009-0005-6825-6728" target="_blank">ORCID</a>
+      <a class="btn" href="https://zenodo.org/communities/tawana-network" target="_blank">Zenodo</a>
+      <a class="btn" href="https://scholar.google.com/citations?user=VP8O0a4AAAAJ&hl=en" target="_blank">Google Scholar</a>
+      <a class="btn" href="https://github.com/tawanamohammadi" target="_blank">GitHub</a>
+      <a class="btn" href="https://tawanamohammadi.medium.com" target="_blank">Medium</a>
     </div>
-  </main>
+  </header>
+
+  <section>
+    <h2>About | <span dir="rtl">درباره من</span></h2>
+    <p>
+      I’m an independent researcher focused on <strong>AI Ethics</strong>, <strong>Digital Governance</strong>,
+      and <strong>Data Transparency</strong>. Founder of the <strong>Tawana Network</strong> — a hub for open, ethical,
+      and human-centered AI research.
+    </p>
+    <p dir="rtl">
+      پژوهشگر مستقل در زمینهٔ <strong>اخلاق هوش مصنوعی</strong>، <strong>حاکمیت دیجیتال</strong> و
+      <strong>شفافیت داده</strong>. بنیان‌گذار <strong>شبکهٔ توانا</strong> برای پژوهش و توسعهٔ اخلاقی در حوزهٔ هوش مصنوعی.
+    </p>
+
+    <blockquote>
+      “True progress in AI lies not in power, but in empathy, accessibility, and accountability.”<br/>
+      <span dir="rtl">«پیشرفت واقعی در هوش مصنوعی در قدرت نیست، بلکه در همدلی، دسترسی‌پذیری و پاسخگویی است.»</span>
+    </blockquote>
+
+    <h2>Research Focus</h2>
+    <ul>
+      <li>🤖 AI Ethics & Governance</li>
+      <li>📊 Data Transparency & Strategy</li>
+      <li>🧠 Prompt Engineering & AI Literacy</li>
+      <li>🔒 Cybersecurity & Digital Rights</li>
+      <li>🌐 Internet Freedom & Censorship Research</li>
+    </ul>
+  </section>
 
   <footer>
-    © 2025 Tawana Mohammadi — Tawana Network | Ethical AI & Data Transparency Research Hub
+    © 2025 Tawana Mohammadi — Tawana Network | Ethical AI & Data Transparency Hub
   </footer>
 </body>
 </html>
