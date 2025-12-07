@@ -11,10 +11,6 @@ export default {
         secondary: '#a29bfe',
         accent: '#f778ba',
       },
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        heading: ['Space Grotesk', 'sans-serif'],
-      },
     },
   },
   plugins: [],
