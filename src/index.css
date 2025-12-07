@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@theme {
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+  
+  --color-primary: #39c5f7;
+  --color-secondary: #a29bfe;
+  --color-accent: #f778ba;
+}
+
+:root {
+  --bg-primary: #02040a;
+  --bg-secondary: #0d1117;
+  --bg-card: rgba(16, 22, 32, 0.5);
+  --border-color: rgba(48, 54, 61, 0.6);
+  --text-primary: #c9d1d9;
+  --text-secondary: #8b949e;
+  --text-bright: #f0f6fc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #02040a;
+  color: #c9d1d9;
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #f0f6fc;
+  font-weight: 600;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
