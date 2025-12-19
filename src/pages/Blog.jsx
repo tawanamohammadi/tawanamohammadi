@@ -1,176 +1,139 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Search, Calendar, Clock, ArrowRight, Tag } from 'lucide-react';
 
-const Blog = () => {
-  const [selectedCategory, setSelectedCategory] = useState('all');
+const SectionHeader = ({ title, subtitle, lang }) => (
+  <div className={`mb-12 ${lang === 'fa' ? 'text-right' : 'text-left'}`}>
+    <h2 className="text-3xl md:text-4xl font-extrabold gradient-text mb-4 uppercase tracking-tight">{title}</h2>
+    <p className="text-gray-500 font-mono text-xs uppercase tracking-[0.2em]">{subtitle}</p>
+  </div>
+);
+
+const Blog = ({ lang }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  useEffect(() => {
-    const sections = document.querySelectorAll('.fade-in-section');
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => sections.forEach((section) => observer.unobserve(section));
-  }, []);
-
-  // Sample blog posts - in production, these would come from markdown files
-  const blogPosts = [
+  const posts = [
     {
       slug: 'ai-ethics-framework',
-      title: 'Building an Ethical AI Framework',
-      excerpt: 'Exploring the key principles and practices for developing ethical AI systems that prioritize transparency and accountability.',
-      category: 'ai-ethics',
+      title: lang === 'en' ? 'Building an Ethical AI Framework' : 'ساخت چارچوب اخلاقی برای هوش مصنوعی',
+      excerpt: lang === 'en'
+        ? 'Exploring the key principles and practices for developing ethical AI systems.'
+        : 'بررسی اصول کلیدی و شیوه‌های توسعه سیستم‌های هوش مصنوعی اخلاقی.',
+      category: 'AI Ethics',
       date: '2025-12-01',
-      readTime: '8 min read',
+      readTime: '8 min'
     },
     {
       slug: 'data-transparency-importance',
-      title: 'The Importance of Data Transparency',
-      excerpt: 'Why transparent data practices are essential for building trust in AI and ML systems.',
-      category: 'data-transparency',
+      title: lang === 'en' ? 'The Importance of Data Transparency' : 'اهمیت شفافیت داده‌ها',
+      excerpt: lang === 'en'
+        ? 'Why transparent data practices are essential for building trust in AI systems.'
+        : 'چرا شیوه‌های شفاف داده برای ایجاد اعتماد در سیستم‌های هوش مصنوعی ضروری هستند.',
+      category: 'Data Strategy',
       date: '2025-11-28',
-      readTime: '6 min read',
+      readTime: '6 min'
     },
     {
       slug: 'personal-journey-ai',
-      title: 'My Journey in AI Research',
-      excerpt: 'Reflections on over a decade of working in AI, from education to independent research.',
-      category: 'personal',
+      title: lang === 'en' ? 'My Journey in AI Research' : 'سفر من در پژوهش هوش مصنوعی',
+      excerpt: lang === 'en'
+        ? 'Reflections on over a decade of working in AI research and education.'
+        : 'تاملاتی در بیش از یک دهه فعالیت در پژوهش و آموزش هوش مصنوعی.',
+      category: 'Personal',
       date: '2025-11-25',
-      readTime: '5 min read',
-    },
+      readTime: '5 min'
+    }
   ];
 
-  const categories = [
-    { id: 'all', label: 'All Posts', icon: '📚' },
-    { id: 'ai-ethics', label: 'AI Ethics', icon: '🤖' },
-    { id: 'data-transparency', label: 'Data Transparency', icon: '📊' },
-    { id: 'personal', label: 'Personal', icon: '✍️' },
-  ];
-
-  const filteredPosts = blogPosts.filter((post) => {
-    const matchesCategory = selectedCategory === 'all' || post.category === selectedCategory;
-    const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
-    return matchesCategory && matchesSearch;
-  });
+  const filteredPosts = posts.filter(post =>
+    post.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
-    <div className="pt-24 px-4 sm:px-6 lg:px-8 min-h-screen">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <section className="text-center mb-12 fade-in-section">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Blog</h1>
-          <p className="text-xl text-[#8b949e] max-w-3xl mx-auto">
-            Insights on AI ethics, data transparency, and the intersection of technology and humanity.
-          </p>
-        </section>
+    <div className="max-w-7xl mx-auto px-6 py-20">
+      <SectionHeader
+        title={lang === 'en' ? 'Intelligence Stream' : 'جریان هوشمندی'}
+        subtitle={lang === 'en' ? 'THOUGHTS, ARTICLES & INSIGHTS' : 'اندیشه‌ها، مقالات و دیدگاه‌ها'}
+        lang={lang}
+      />
 
-        {/* Search and Filter */}
-        <div className="mb-12 fade-in-section">
-          {/* Search Bar */}
-          <div className="max-w-2xl mx-auto mb-8">
-            <div className="relative">
-              <input
-                type="text"
-                placeholder="Search posts..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full px-4 py-3 pl-12 bg-[#161b22] border border-[#30363d] rounded-lg text-[#c9d1d9] placeholder-[#8b949e] focus:border-primary focus:outline-none transition-colors"
-              />
-              <svg
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#8b949e]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </div>
-          </div>
-
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-2 rounded-lg font-medium transition-all ${
-                  selectedCategory === category.id
-                    ? 'bg-primary text-white'
-                    : 'bg-[#161b22] border border-[#30363d] text-[#8b949e] hover:border-primary hover:text-primary'
-                }`}
-              >
-                <span className="mr-2">{category.icon}</span>
-                {category.label}
-              </button>
-            ))}
-          </div>
+      {/* Search Bar */}
+      <div className="max-w-xl mb-16">
+        <div className="relative group">
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-tech-cyan transition-colors" size={20} />
+          <input
+            type="text"
+            placeholder={lang === 'en' ? "Search articles..." : "جستجوی مقالات..."}
+            className="w-full bg-white/[0.03] border border-white/10 p-4 pl-12 font-mono text-sm focus:border-tech-cyan focus:outline-none transition-all"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
         </div>
+      </div>
 
-        {/* Blog Posts Grid */}
-        <section className="fade-in-section">
-          {filteredPosts.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredPosts.map((post) => (
-                <Link
-                  key={post.slug}
-                  to={`/blog/${post.slug}`}
-                  className="group block bg-[#161b22]/50 backdrop-blur border border-[#30363d] rounded-lg overflow-hidden hover:border-primary transition-all hover:-translate-y-1"
-                >
-                  <div className="p-6">
-                    <div className="flex items-center gap-2 text-xs text-[#8b949e] mb-3">
-                      <span className="px-2 py-1 bg-primary/10 text-primary rounded">
-                        {categories.find(c => c.id === post.category)?.label}
-                      </span>
-                      <span>•</span>
-                      <span>{post.date}</span>
-                      <span>•</span>
-                      <span>{post.readTime}</span>
-                    </div>
-                    <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
-                      {post.title}
-                    </h3>
-                    <p className="text-[#8b949e] text-sm mb-4 line-clamp-3">
-                      {post.excerpt}
-                    </p>
-                    <div className="flex items-center text-primary font-medium text-sm">
-                      Read More
-                      <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                      </svg>
-                    </div>
+      {/* Blog Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <AnimatePresence>
+          {filteredPosts.map((post, i) => (
+            <motion.div
+              key={post.slug}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              className="glass overflow-hidden flex flex-col group h-full bg-white/[0.01]"
+            >
+              <div className="p-8 flex-grow">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-[10px] font-mono text-tech-cyan bg-tech-cyan/10 px-2 py-1 uppercase tracking-widest">{post.category}</span>
+                  <div className="flex items-center gap-1 text-[10px] font-mono text-gray-500 uppercase">
+                    <Calendar size={12} /> {post.date}
                   </div>
-                </Link>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-20">
-              <p className="text-xl text-[#8b949e]">No posts found matching your criteria.</p>
-            </div>
-          )}
-        </section>
+                </div>
 
-        {/* Coming Soon Notice */}
-        <section className="mt-16 mb-12 fade-in-section">
-          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/30 rounded-lg p-8 text-center">
-            <h2 className="text-2xl font-heading font-semibold mb-4">More Content Coming Soon</h2>
-            <p className="text-[#8b949e]">
-              I'm actively working on more articles covering AI ethics, data transparency, and personal insights. 
-              Check back regularly or follow me on <a href="https://tawanamohammadi.medium.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary">Medium</a> for updates.
-            </p>
-          </div>
-        </section>
+                <Link to={`/blog/${post.slug}`}>
+                  <h3 className="text-2xl font-bold mb-4 tracking-tight group-hover:text-tech-cyan transition-colors leading-tight">
+                    {post.title}
+                  </h3>
+                </Link>
+                <p className="text-gray-400 font-light text-sm mb-6 line-clamp-3">
+                  {post.excerpt}
+                </p>
+              </div>
+
+              <div className="p-8 pt-0 mt-auto">
+                <div className="flex items-center justify-between border-t border-white/5 pt-6">
+                  <div className="flex items-center gap-1 text-[10px] font-mono text-gray-500 uppercase">
+                    <Clock size={12} /> {post.readTime}
+                  </div>
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="flex items-center gap-2 text-[10px] font-mono text-tech-cyan uppercase tracking-widest group"
+                  >
+                    Read More <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </AnimatePresence>
+      </div>
+
+      {/* External Platforms */}
+      <div className="mt-32 p-12 glass text-center relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-40 h-40 bg-tech-magenta/5 blur-3xl rounded-full"></div>
+        <h3 className="text-xl font-bold mb-4 uppercase tracking-tight italic">
+          {lang === 'en' ? 'Extended Scientific Discourse' : 'ادامه گفتگوهای علمی'}
+        </h3>
+        <p className="text-gray-400 text-sm mb-8 max-w-xl mx-auto">
+          {lang === 'en'
+            ? "I actively publish detailed research papers and technical insights on Medium and Substack. Join the community for regular updates."
+            : "من به طور فعال مقالات پژوهشی دقیق و دیدگاه‌های فنی را در مدیوم و ساب‌استک منتشر می‌کنم. برای به‌روزرسانی‌های منظم به انجمن بپیوندید."}
+        </p>
+        <div className="flex justify-center gap-4">
+          <a href="https://tawanamohammadi.medium.com" target="_blank" rel="noopener noreferrer" className="tech-btn text-[10px]">Medium</a>
+          <a href="https://tawanamohammadi.substack.com" target="_blank" rel="noopener noreferrer" className="tech-btn text-[10px]">Substack</a>
+        </div>
       </div>
     </div>
   );

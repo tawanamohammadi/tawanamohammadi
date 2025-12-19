@@ -1,159 +1,121 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { GraduationCap, Award, Building, Calendar, MapPin } from 'lucide-react';
+import { tawanaData } from '../data/tawanaData';
 
-const About = () => {
-  useEffect(() => {
-    const sections = document.querySelectorAll('.fade-in-section');
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+const SectionHeader = ({ title, subtitle, lang }) => (
+  <div className={`mb-12 ${lang === 'fa' ? 'text-right' : 'text-left'}`}>
+    <h2 className="text-3xl md:text-4xl font-extrabold gradient-text mb-4 uppercase tracking-tight">{title}</h2>
+    <p className="text-gray-500 font-mono text-xs uppercase tracking-[0.2em]">{subtitle}</p>
+  </div>
+);
 
-    sections.forEach((section) => observer.observe(section));
-
-    return () => sections.forEach((section) => observer.unobserve(section));
-  }, []);
-
+const About = ({ lang }) => {
   return (
-    <div className="pt-24 px-4 sm:px-6 lg:px-8 min-h-screen">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <section className="text-center mb-16 fade-in-section">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">About Me</h1>
-          <p className="text-xl text-[#8b949e] italic">
-            "True progress in AI lies not in power, but in empathy, accessibility, and accountability."
-          </p>
-        </section>
-
+    <div className="max-w-7xl mx-auto px-6 py-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
         {/* Biography */}
-        <section className="mb-16 fade-in-section">
-          <div className="prose prose-invert max-w-none">
-            <div className="bg-[#161b22]/50 backdrop-blur border border-[#30363d] rounded-lg p-8">
-              <h2 className="text-3xl font-heading font-semibold mb-6">Biography</h2>
-              <p className="text-[#c9d1d9] leading-relaxed mb-4">
-                I'm an <strong>AI Researcher</strong>, <strong>Data Strategist</strong>, and <strong>Educator</strong> with over 10 years of experience in AI systems, cybersecurity, and education. Currently pursuing my <strong>B.Sc. in Computer Science (AI Track)</strong> at <strong>University of the People</strong> and collaborating with <strong>Harvard University</strong> on research initiatives.
-              </p>
-              <p className="text-[#c9d1d9] leading-relaxed mb-4">
-                My mission is to design human-centered, transparent, and responsible AI systems that empower individuals through ethical innovation and data literacy. With extensive experience in AI systems and cybersecurity, I explore how algorithms and human values can coexist in ethical digital ecosystems.
-              </p>
-              <p className="text-[#c9d1d9] leading-relaxed">
-                I believe that AI should remain transparent, inclusive, and grounded in empathy. Through responsible design, I aim to make AI a bridge, not a barrier, between humans and technology.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Education */}
-        <section className="mb-16 fade-in-section">
-          <h2 className="text-3xl font-heading font-semibold mb-8">Education & Affiliations</h2>
-          <div className="space-y-6">
-            <div className="bg-[#161b22]/50 backdrop-blur border border-[#30363d] rounded-lg p-6 border-l-4 border-l-primary">
-              <h3 className="text-xl font-semibold mb-2">Bachelor of Science in Computer Science (AI Track)</h3>
-              <p className="text-primary font-medium mb-2">University of the People, Pasadena, CA, USA</p>
-              <p className="text-[#8b949e] mb-3">2025 - Present</p>
-              <ul className="list-disc list-inside text-[#8b949e] space-y-1">
-                <li>Orientation Completed (Office of Student Advising, Nov 2025)</li>
-                <li>Focus: AI Ethics, Machine Learning, Data Science, Cybersecurity</li>
-              </ul>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-[#161b22]/50 backdrop-blur border border-[#30363d] rounded-lg p-6">
-                <h3 className="text-lg font-semibold mb-2">University of the People</h3>
-                <p className="text-[#8b949e]">B.Sc. Computer Science Student</p>
-              </div>
-              <div className="bg-[#161b22]/50 backdrop-blur border border-[#30363d] rounded-lg p-6">
-                <h3 className="text-lg font-semibold mb-2">Harvard University</h3>
-                <p className="text-[#8b949e]">Research Collaborator</p>
-              </div>
-              <div className="bg-[#161b22]/50 backdrop-blur border border-[#30363d] rounded-lg p-6">
-                <h3 className="text-lg font-semibold mb-2">Tawana Network</h3>
-                <p className="text-[#8b949e]">Founder & Director (Ethical AI Research Hub)</p>
-              </div>
-              <div className="bg-[#161b22]/50 backdrop-blur border border-[#30363d] rounded-lg p-6">
-                <h3 className="text-lg font-semibold mb-2">Independent Researcher</h3>
-                <p className="text-[#8b949e]">Tehran, Iran</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Achievements */}
-        <section className="mb-16 fade-in-section">
-          <h2 className="text-3xl font-heading font-semibold mb-8">Key Achievements</h2>
-          <div className="space-y-4">
-            {[
-              {
-                icon: '📄',
-                title: 'Published Research',
-                description: 'Multiple peer-reviewed publications on AI ethics, digital governance, and data transparency.',
-              },
-              {
-                icon: '🏛️',
-                title: 'Academic Profiles',
-                description: 'ORCID: 0009-0005-6825-6728, Google Scholar, Web of Science: ORI-6601-2025.',
-              },
-              {
-                icon: '🌐',
-                title: 'Tawana Network',
-                description: 'Founded ethical AI research hub focusing on transparency and human-centered systems.',
-              },
-              {
-                icon: '💻',
-                title: 'Open Source Contributions',
-                description: 'Developed ethical frameworks and tools for transparent AI data analysis.',
-              },
-              {
-                icon: '🎓',
-                title: 'Education & Mentoring',
-                description: 'Over 10 years of experience in AI education and promoting digital literacy.',
-              },
-              {
-                icon: '🔍',
-                title: 'Research Impact',
-                description: 'Work on internet censorship, AI ethics, and prompt engineering widely recognized.',
-              },
-            ].map((achievement, index) => (
-              <div key={index} className="flex gap-4 bg-[#161b22]/50 backdrop-blur border border-[#30363d] rounded-lg p-6 hover:border-primary transition-colors">
-                <div className="text-3xl flex-shrink-0">{achievement.icon}</div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-1">{achievement.title}</h3>
-                  <p className="text-[#8b949e]">{achievement.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Research Philosophy */}
-        <section className="mb-16 fade-in-section">
-          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/30 rounded-lg p-8 text-center">
-            <h2 className="text-3xl font-heading font-semibold mb-6">Research Philosophy</h2>
-            <blockquote className="text-xl italic text-[#c9d1d9] mb-4">
-              "AI should remain transparent, inclusive, and grounded in empathy."
-            </blockquote>
-            <p className="text-[#8b949e] leading-relaxed">
-              With over a decade of experience, I explore how algorithms and human values can coexist in transparent, ethical digital ecosystems. True progress lies in <strong className="text-primary">empathy, accessibility, and accountability</strong>.
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+        >
+          <SectionHeader
+            title={lang === 'en' ? 'The Visionary' : 'داستان من'}
+            subtitle={lang === 'en' ? 'BIOGRAPHY & MISSION' : 'زندگی‌نامه و مأموریت'}
+            lang={lang}
+          />
+          <div className="space-y-6 text-gray-300 text-lg leading-relaxed font-light">
+            <p>{tawanaData.bio[lang]}</p>
+            <p>
+              {lang === 'en'
+                ? "With over 10 years of experience in AI systems, cybersecurity, and education, I explore how algorithms and human values can coexist in transparent and ethical digital ecosystems."
+                : "با بیش از ۱۰ سال تجربه در سیستم‌های هوش مصنوعی، امنیت سایبری و آموزش، من در حال بررسی این هستم که چگونه الگوریتم‌ها و ارزش‌های انسانی می‌توانند در اکوسیستم‌های دیجیتال شفاف و اخلاقی در کنار هم قرار گیرند."}
+            </p>
+            <p>
+              {lang === 'en'
+                ? "I believe that true progress in AI lies not in power, but in empathy, accessibility, and accountability. Through responsible design and education, I aim to make AI a bridge, not a barrier."
+                : "من معتقدم پیشرفت واقعی در هوش مصنوعی نه در قدرت، بلکه در همدلی، دسترسی و پاسخگویی نهفته است. از طریق طراحی مسئولانه و آموزش، هدف من این است که هوش مصنوعی را به یک پل تبدیل کنم، نه یک مانع."}
             </p>
           </div>
-        </section>
+        </motion.div>
 
-        {/* Contact Info */}
-        <section className="mb-16 fade-in-section">
-          <div className="bg-[#161b22]/50 backdrop-blur border border-[#30363d] rounded-lg p-8 text-center">
-            <h2 className="text-2xl font-heading font-semibold mb-4">Location & Availability</h2>
-            <div className="space-y-2 text-[#8b949e]">
-              <p>🌍 <strong className="text-[#f0f6fc]">Based in:</strong> Tehran, Iran</p>
-              <p>💼 <strong className="text-[#f0f6fc]">Working:</strong> Remote / Global</p>
-              <p>🕐 <strong className="text-[#f0f6fc]">Timezone:</strong> IRST (UTC+3:30)</p>
+        {/* Profile Stats / Data Card */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="glass p-12 relative overflow-hidden group"
+        >
+          <div className="absolute top-0 right-0 w-32 h-32 bg-tech-cyan/20 blur-3xl rounded-full translate-x-1/2 -translate-y-1/2"></div>
+
+          <div className="space-y-8">
+            <div className="flex items-center gap-6">
+              <div className="w-24 h-24 rounded-2xl glass border border-tech-cyan flex items-center justify-center">
+                <span className="text-4xl font-bold text-tech-cyan">TM</span>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold uppercase tracking-tight">{tawanaData.name[lang]}</h3>
+                <p className="text-tech-cyan font-mono text-xs uppercase tracking-widest">{tawanaData.contact.location}</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4">
+              <div className="glass p-4 border-l border-tech-cyan bg-white/[0.02]">
+                <p className="text-[10px] uppercase font-mono text-gray-500 mb-1">Education</p>
+                <p className="text-sm font-semibold">{tawanaData.education[0].institution}</p>
+              </div>
+              <div className="glass p-4 border-l border-tech-magenta bg-white/[0.02]">
+                <p className="text-[10px] uppercase font-mono text-gray-500 mb-1">Focus</p>
+                <p className="text-sm font-semibold">{tawanaData.education[0].focus}</p>
+              </div>
+              <div className="glass p-4 border-l border-white/20 bg-white/[0.02]">
+                <p className="text-[10px] uppercase font-mono text-gray-500 mb-1">Affiliation</p>
+                <p className="text-sm font-semibold">{tawanaData.affiliations[0].name}</p>
+              </div>
             </div>
           </div>
-        </section>
+        </motion.div>
+      </div>
+
+      {/* Timeline Section */}
+      <div className="mt-40">
+        <SectionHeader
+          title={lang === 'en' ? 'Academic Odyssey' : 'سفر آکادمیک'}
+          subtitle={lang === 'en' ? 'TIMELINE & MILESTONES' : 'خط زمانی و دستاوردها'}
+          lang={lang}
+        />
+
+        <div className="space-y-12">
+          {/* Education Timeline */}
+          <div className="relative border-l border-white/10 pl-8 ml-4">
+            <div className="absolute top-0 -left-[5px] w-2 h-2 bg-tech-cyan rounded-full"></div>
+            <div className="mb-2 flex items-center gap-2 text-tech-cyan font-mono text-xs">
+              <Calendar size={14} />
+              <span>{tawanaData.education[0].period}</span>
+            </div>
+            <h3 className="text-xl font-bold mb-2 flex items-center gap-3">
+              <GraduationCap size={20} className="text-gray-400" />
+              {tawanaData.education[0].degree}
+            </h3>
+            <p className="text-gray-400 font-light mb-1">{tawanaData.education[0].institution}</p>
+            <p className="text-xs text-gray-500 uppercase tracking-widest flex items-center gap-1">
+              <MapPin size={10} /> {tawanaData.education[0].location}
+            </p>
+          </div>
+
+          {/* Affiliations Timeline */}
+          {tawanaData.affiliations.map((aff, i) => (
+            <div key={i} className="relative border-l border-white/10 pl-8 ml-4">
+              <div className="absolute top-0 -left-[5px] w-2 h-2 bg-tech-magenta rounded-full"></div>
+              <div className="mb-2 flex items-center gap-2 text-tech-magenta font-mono text-xs">
+                <Building size={14} />
+                <span>{aff.period || 'COLLABORATION'}</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">{aff.name}</h3>
+              <p className="text-gray-400 font-light">{aff.role}</p>
+              <p className="text-xs text-gray-500 uppercase tracking-widest mt-1">{aff.focus || aff.type}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
