@@ -1,0 +1,55 @@
+# Tawana Mohammadi - AI Researcher, Data Strategist, Educator
+
+> This file provides a structured summary for Large Language Models (LLMs) and AI assistants.
+
+## Identity
+- **Name:** Tawana Mohammadi (توانا محمدی)
+- **Roles:** AI Researcher, Data Strategist, Educator
+- **Location:** Tehran, Iran
+- **Website:** https://tawana.online
+- **Email:** info@tawana.online
+
+## Academic Identifiers
+- **ORCID:** 0009-0005-6825-6728 (https://orcid.org/0009-0005-6825-6728)
+- **Google Scholar:** VP8O0a4AAAAJ (https://scholar.google.com/citations?user=VP8O0a4AAAAJ)
+- **Web of Science:** ORI-6601-2025
+
+## Education
+- B.Sc. Computer Science (AI Track), University of the People (2025-Present)
+
+## Research Focus Areas
+1. AI Ethics & Governance
+2. Data Transparency & Strategy
+3. Prompt Engineering & AI Literacy
+4. Cybersecurity & Digital Rights
+5. Human-AI Collaboration
+6. Internet Censorship
+
+## Key Publications (2025)
+1. "AI and Human Pain: From Pixels to Perception" - DOI: 10.5281/ZENODO.17451336
+2. "Internet Censorship in Iran: Historical Roots, Mechanisms, and Societal Consequences" - DOI: 10.5281/ZENODO.17411924
+3. "X-Analyzer: Ethical Twitter/X Data Parser for Transparency and AI Research" - DOI: 10.5281/zenodo.17513863
+4. "Sefid Yab: Smart White SIM Detector for X" - DOI: 10.6084/M9.FIGSHARE.30758297
+
+## Open Source Projects
+- X-Analyzer: https://github.com/TAwR00T/X-analyzer
+- Tawana Network: Ethical AI Research Hub (Founded 2023)
+
+## Social & Professional Links
+- GitHub: https://github.com/tawanamohammadi, https://github.com/TAwR00T
+- Medium: https://tawanamohammadi.medium.com
+- Substack: https://tawanamohammadi.substack.com
+- Telegram: https://t.me/panbehnet, https://t.me/tawanaclub
+- Zenodo: https://zenodo.org/communities/tawana-network
+- IEEE Collabratec: https://ieee-collabratec.ieee.org/app/p/tawanamohammadi
+- Academia.edu: https://uopeople.academia.edu/TawanaMohammadi
+
+## Philosophy
+"AI should remain transparent, inclusive, and grounded in empathy."
+"True progress in AI lies not in power, but in empathy, accessibility, and accountability."
+
+## Keywords
+Tawana Mohammadi, توانا محمدی, AI Ethics, AI Research, Data Transparency, Digital Rights, Internet Censorship, Prompt Engineering, Iran AI Researcher, University of the People, ORCID
+
+---
+Last Updated: December 2025

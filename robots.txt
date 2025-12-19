@@ -1,0 +1,11 @@
+# Robots.txt for tawana.online
+# Personal Hub of Tawana Mohammadi - AI Researcher
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://tawana.online/sitemap.xml
+
+# LLM-specific file
+# See llms.txt for AI/LLM-friendly content summary
